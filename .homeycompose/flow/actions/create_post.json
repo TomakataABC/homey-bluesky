@@ -1,0 +1,33 @@
+{
+  "title": {
+    "en": "Create post",
+    "cs": "Vytvořit příspěvek"
+  },
+  "titleFormatted": {
+    "en": "Create post with [[text]]",
+    "cs": "Vytvořit příspěvek s textem [[text]]"
+  },
+  "hint": {
+    "en": "Posts the supplied text through the selected Bluesky account.",
+    "cs": "Odešle zadaný text přes vybraný účet Bluesky."
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=bluesky-account"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "title": {
+        "en": "Post text",
+        "cs": "Text příspěvku"
+      },
+      "placeholder": {
+        "en": "What should be posted?",
+        "cs": "Co se má zveřejnit?"
+      }
+    }
+  ]
+}

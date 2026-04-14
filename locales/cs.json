@@ -1,0 +1,21 @@
+{
+  "app": {
+    "name": "Bluesky",
+    "description": "Sledujte svůj účet Bluesky a pracujte s ním."
+  },
+  "flow": {
+    "create_post_success": "Příspěvek byl úspěšně vytvořen."
+  },
+  "errors": {
+    "missing_handle": "Nejprve zadejte svůj handle na Bluesky.",
+    "missing_app_password": "Zadejte heslo aplikace pro Bluesky.",
+    "login_failed": "Přihlášení do Bluesky selhalo.",
+    "session_missing": "Pro tento účet nebyla nalezena uložená relace Bluesky.",
+    "post_text_required": "Text příspěvku nesmí být prázdný."
+  },
+  "settings": {
+    "account_handle": "Handle účtu",
+    "account_did": "DID účtu",
+    "service_endpoint": "Koncový bod PDS"
+  }
+}

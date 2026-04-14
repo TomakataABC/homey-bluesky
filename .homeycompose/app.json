@@ -1,0 +1,32 @@
+{
+  "id": "app.bsky",
+  "version": "1.0.0",
+  "compatibility": ">=12.4.0",
+  "sdk": 3,
+  "runtime": "nodejs",
+  "brandColor": "#1185FE",
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "name": {
+    "en": "Bluesky",
+    "cs": "Bluesky"
+  },
+  "description": {
+    "en": "Monitor and interact with your Bluesky account.",
+    "cs": "Sledujte svůj účet Bluesky a pracujte s ním."
+  },
+  "author": {
+    "name": "Tomáš Pryl",
+    "email": "t.pryl@seznam.cz"
+  },
+  "category": [
+    "internet"
+  ],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  }
+}

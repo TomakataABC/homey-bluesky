@@ -1,0 +1,56 @@
+{
+  "name": {
+    "en": "Bluesky account",
+    "cs": "Účet Bluesky"
+  },
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "class": "other",
+  "capabilities": [],
+  "images": {
+    "small": "/drivers/bluesky-account/assets/images/small.png",
+    "large": "/drivers/bluesky-account/assets/images/large.png",
+    "xlarge": "/drivers/bluesky-account/assets/images/xlarge.png"
+  },
+  "pair": [
+    {
+      "id": "login_credentials",
+      "template": "login_credentials",
+      "options": {
+        "title": {
+          "en": "Sign in to Bluesky",
+          "cs": "Přihlásit se do Bluesky"
+        },
+        "usernameLabel": {
+          "en": "Handle",
+          "cs": "Handle"
+        },
+        "usernamePlaceholder": {
+          "en": "alice.bsky.social",
+          "cs": "alice.bsky.social"
+        },
+        "passwordLabel": {
+          "en": "App password",
+          "cs": "Heslo aplikace"
+        },
+        "passwordPlaceholder": {
+          "en": "xxxx-xxxx-xxxx-xxxx",
+          "cs": "xxxx-xxxx-xxxx-xxxx"
+        }
+      }
+    },
+    {
+      "id": "list_devices",
+      "template": "list_devices_singular",
+      "navigation": {
+        "next": "add_devices"
+      }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices"
+    }
+  ]
+}

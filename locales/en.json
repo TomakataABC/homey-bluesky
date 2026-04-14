@@ -1,0 +1,21 @@
+{
+  "app": {
+    "name": "Bluesky",
+    "description": "Monitor and interact with your Bluesky account."
+  },
+  "flow": {
+    "create_post_success": "Post created successfully."
+  },
+  "errors": {
+    "missing_handle": "Enter your Bluesky handle first.",
+    "missing_app_password": "Enter a Bluesky app password.",
+    "login_failed": "Bluesky login failed.",
+    "session_missing": "No saved Bluesky session was found for this account.",
+    "post_text_required": "Post text cannot be empty."
+  },
+  "settings": {
+    "account_handle": "Account handle",
+    "account_did": "Account DID",
+    "service_endpoint": "PDS endpoint"
+  }
+}
