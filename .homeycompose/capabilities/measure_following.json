@@ -1,0 +1,12 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Following",
+    "cs": "Sledované účty"
+  },
+  "icon": "/capabilities/measure_following.svg",
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "preventInsights": true
+}

@@ -1,0 +1,9 @@
+{
+  "id": "display_name",
+  "type": "label",
+  "label": {
+    "en": "Display name",
+    "cs": "Zobrazované jméno"
+  },
+  "value": ""
+}

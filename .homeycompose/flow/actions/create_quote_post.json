@@ -1,0 +1,9 @@
+{
+  "title": { "en": "Create quote post", "cs": "Vytvořit citující příspěvek" },
+  "titleFormatted": { "en": "Create quote post with [[text]] for [[post_uri]]", "cs": "Vytvořit citující příspěvek s textem [[text]] pro [[post_uri]]" },
+  "args": [
+    { "type": "device", "name": "device", "filter": "driver_id=bluesky-account" },
+    { "type": "text", "name": "text", "title": { "en": "Post text", "cs": "Text příspěvku" } },
+    { "type": "text", "name": "post_uri", "title": { "en": "Post URI", "cs": "URI příspěvku" } }
+  ]
+}

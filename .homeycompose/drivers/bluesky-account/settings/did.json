@@ -1,0 +1,9 @@
+{
+  "id": "did",
+  "type": "label",
+  "label": {
+    "en": "DID",
+    "cs": "DID"
+  },
+  "value": ""
+}

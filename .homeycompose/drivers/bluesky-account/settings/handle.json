@@ -1,0 +1,9 @@
+{
+  "id": "handle",
+  "type": "label",
+  "label": {
+    "en": "Handle",
+    "cs": "Handle"
+  },
+  "value": ""
+}

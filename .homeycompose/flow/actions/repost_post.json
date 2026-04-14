@@ -1,0 +1,8 @@
+{
+  "title": { "en": "Repost post", "cs": "Přeposlat příspěvek" },
+  "titleFormatted": { "en": "Repost post [[post_uri]]", "cs": "Přeposlat příspěvek [[post_uri]]" },
+  "args": [
+    { "type": "device", "name": "device", "filter": "driver_id=bluesky-account" },
+    { "type": "text", "name": "post_uri", "title": { "en": "Post URI", "cs": "URI příspěvku" } }
+  ]
+}

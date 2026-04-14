@@ -1,0 +1,8 @@
+{
+  "title": { "en": "Unblock user", "cs": "Odblokovat uživatele" },
+  "titleFormatted": { "en": "Unblock [[actor]]", "cs": "Odblokovat [[actor]]" },
+  "args": [
+    { "type": "device", "name": "device", "filter": "driver_id=bluesky-account" },
+    { "type": "text", "name": "actor", "title": { "en": "Handle or DID", "cs": "Handle nebo DID" } }
+  ]
+}

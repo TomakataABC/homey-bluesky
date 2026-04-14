@@ -1,0 +1,8 @@
+{
+  "title": { "en": "Like post", "cs": "Označit příspěvek jako To se mi líbí" },
+  "titleFormatted": { "en": "Like post [[post_uri]]", "cs": "Označit příspěvek [[post_uri]] jako To se mi líbí" },
+  "args": [
+    { "type": "device", "name": "device", "filter": "driver_id=bluesky-account" },
+    { "type": "text", "name": "post_uri", "title": { "en": "Post URI", "cs": "URI příspěvku" } }
+  ]
+}

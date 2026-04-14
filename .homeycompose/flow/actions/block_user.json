@@ -1,0 +1,8 @@
+{
+  "title": { "en": "Block user", "cs": "Blokovat uživatele" },
+  "titleFormatted": { "en": "Block [[actor]]", "cs": "Blokovat [[actor]]" },
+  "args": [
+    { "type": "device", "name": "device", "filter": "driver_id=bluesky-account" },
+    { "type": "text", "name": "actor", "title": { "en": "Handle or DID", "cs": "Handle nebo DID" } }
+  ]
+}

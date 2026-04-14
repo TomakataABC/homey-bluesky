@@ -4,20 +4,19 @@ This file summarizes realistic feature ideas based on the official Bluesky / ATP
 
 Core actions the app could support
 
-- Create a post
 - Create a reply
-- Quote a post
-- Repost and undo repost
-- Like and unlike a post
-- Delete own post
+- [x] Quote a post
+- [x] Repost and undo repost
+- [x] Like and unlike a post
+- [x] Delete own post
 - Post with images
 - Post with video
 - Post with link embeds
 - Post with mentions and rich-text facets
 - Post with reply restrictions / thread gates
-- Follow and unfollow users
-- Block and unblock users
-- Mute and unmute users
+- [x] Follow and unfollow users
+- [x] Block and unblock users
+- [x] Mute and unmute users
 - Create and manage lists
 - Add and remove users from lists
 - Mute and block lists
@@ -29,35 +28,35 @@ Core actions the app could support
 Data the app could report
 
 Account/profile data
-- Handle
-- DID
-- Display name
+- [x] Handle
+- [x] DID
+- [x] Display name
 - Bio
 - Avatar or banner presence
-- Follower count
-- Following count
-- Post count
+- [x] Follower count
+- [x] Following count
+- [x] Post count
 
 Notifications and activity
-- Unread notification count
-- Notification list
-- Mentions
+- [x] Unread notification count
+- [x] Notification list
+- [x] Mentions
 - Likes on your posts
 - Reposts of your posts
 - Replies to your posts
-- New followers
+- [x] New followers
 
 Feed and post data
-- Latest post text
-- Latest post URI
-- Latest post timestamp
-- Latest post like, repost, reply, and quote counts
+- [x] Latest post text
+- [x] Latest post URI
+- [x] Latest post timestamp
+- [x] Latest post like, repost, reply, and quote counts
 - Timeline latest item
 - Custom feed latest item
 - Author feed latest item
 
 Relationship and moderation state
-- Whether you follow a target user
+- [x] Whether you follow a target user
 - Whether a target user follows you
 - Whether a user is muted
 - Whether a user is blocked
@@ -72,8 +71,8 @@ List data
 
 Possible Homey Flow trigger cards
 
-- New mention
-- New follower
+- [x] New mention
+- [x] New follower
 - New reply to my post
 - New like on my post
 - New repost of my post
@@ -92,7 +91,7 @@ Possible Homey Flow trigger cards
 Possible Homey Flow condition cards
 
 - Has unread notifications
-- Is user followed
+- [x] Is user followed
 - Is user muted
 - Is user blocked
 - Is list muted
@@ -100,18 +99,18 @@ Possible Homey Flow condition cards
 - Follower count is above X
 - Latest post contains text, link, or image
 - Specific post has more than X likes, reposts, or replies
-- Profile handle or display name matches a value
+- [x] Profile handle or display name matches a value
 
 Possible Homey Flow action cards
 
-- Create post
+- [x] Create post
 - Reply to post
-- Quote post
-- Like / unlike post
-- Repost / undo repost
-- Follow / unfollow user
-- Mute / unmute user
-- Block / unblock user
+- [x] Quote post
+- [x] Like / unlike post
+- [x] Repost / undo repost
+- [x] Follow / unfollow user
+- [x] Mute / unmute user
+- [x] Block / unblock user
 - Add user to list
 - Remove user from list
 - Update profile details
@@ -120,9 +119,9 @@ Possible Homey Flow action cards
 
 Possible Homey widgets
 
-- Profile summary widget with avatar, handle, display name, and counts
-- Unread notifications widget with count and latest notifications
-- Latest post widget with text, timestamp, and engagement counts
+- [ ] Profile summary widget with avatar, handle, display name, and counts (implemented but disabled for now)
+- [ ] Unread notifications widget with count and latest notifications (implemented but disabled for now)
+- [ ] Latest post widget with text, timestamp, and engagement counts (implemented but disabled for now)
 - Engagement widget for a selected post
 - Watched feed widget for latest posts from an author, list, or custom feed
 - Mentions widget

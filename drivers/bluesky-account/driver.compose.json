@@ -8,7 +8,41 @@
     "cloud"
   ],
   "class": "other",
-  "capabilities": [],
+  "capabilities": [
+    "measure_followers",
+    "measure_following",
+    "measure_posts",
+    "measure_unread_notifications"
+  ],
+  "settings": [
+    {
+      "id": "display_name",
+      "type": "label",
+      "label": {
+        "en": "Display name",
+        "cs": "Zobrazované jméno"
+      },
+      "value": ""
+    },
+    {
+      "id": "handle",
+      "type": "label",
+      "label": {
+        "en": "Handle",
+        "cs": "Handle"
+      },
+      "value": ""
+    },
+    {
+      "id": "did",
+      "type": "label",
+      "label": {
+        "en": "DID",
+        "cs": "DID"
+      },
+      "value": ""
+    }
+  ],
   "images": {
     "small": "/drivers/bluesky-account/assets/images/small.png",
     "large": "/drivers/bluesky-account/assets/images/large.png",
@@ -19,6 +53,7 @@
       "id": "login_credentials",
       "template": "login_credentials",
       "options": {
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Bluesky_Logo.svg",
         "title": {
           "en": "Sign in to Bluesky",
           "cs": "Přihlásit se do Bluesky"

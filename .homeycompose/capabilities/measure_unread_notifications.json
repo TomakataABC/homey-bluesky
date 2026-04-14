@@ -1,0 +1,12 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Unread notifications",
+    "cs": "Nepřečtená oznámení"
+  },
+  "icon": "/capabilities/measure_unread_notifications.svg",
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "preventInsights": true
+}

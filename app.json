@@ -15,8 +15,8 @@
     "cs": "Bluesky"
   },
   "description": {
-    "en": "Post to your Bluesky network from Homey Flows.",
-    "cs": "Publikujte do své sítě Bluesky pomocí Homey Flow."
+    "en": "Monitor and interact with your Bluesky account.",
+    "cs": "Sledujte svůj účet Bluesky a pracujte s ním."
   },
   "author": {
     "name": "Tomáš Pryl",
@@ -31,7 +31,263 @@
     "xlarge": "/assets/images/xlarge.png"
   },
   "flow": {
+    "triggers": [
+      {
+        "title": {
+          "en": "New follower",
+          "cs": "Nový sledující"
+        },
+        "tokens": [
+          {
+            "name": "user_handle",
+            "type": "string",
+            "title": {
+              "en": "User handle",
+              "cs": "Handle uživatele"
+            }
+          },
+          {
+            "name": "user_name",
+            "type": "string",
+            "title": {
+              "en": "User name",
+              "cs": "Jméno uživatele"
+            }
+          },
+          {
+            "name": "user_did",
+            "type": "string",
+            "title": {
+              "en": "User DID",
+              "cs": "DID uživatele"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=bluesky-account"
+          }
+        ],
+        "id": "new_follower"
+      },
+      {
+        "title": {
+          "en": "New mention",
+          "cs": "Nová zmínka"
+        },
+        "tokens": [
+          {
+            "name": "user_handle",
+            "type": "string",
+            "title": {
+              "en": "User handle",
+              "cs": "Handle uživatele"
+            }
+          },
+          {
+            "name": "user_name",
+            "type": "string",
+            "title": {
+              "en": "User name",
+              "cs": "Jméno uživatele"
+            }
+          },
+          {
+            "name": "user_did",
+            "type": "string",
+            "title": {
+              "en": "User DID",
+              "cs": "DID uživatele"
+            }
+          },
+          {
+            "name": "text",
+            "type": "string",
+            "title": {
+              "en": "Mention text",
+              "cs": "Text zmínky"
+            }
+          },
+          {
+            "name": "post_uri",
+            "type": "string",
+            "title": {
+              "en": "Post URI",
+              "cs": "URI příspěvku"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=bluesky-account"
+          }
+        ],
+        "id": "new_mention"
+      },
+      {
+        "title": {
+          "en": "New notification",
+          "cs": "Nové oznámení"
+        },
+        "tokens": [
+          {
+            "name": "user_handle",
+            "type": "string",
+            "title": {
+              "en": "User handle",
+              "cs": "Handle uživatele"
+            }
+          },
+          {
+            "name": "user_name",
+            "type": "string",
+            "title": {
+              "en": "User name",
+              "cs": "Jméno uživatele"
+            }
+          },
+          {
+            "name": "user_did",
+            "type": "string",
+            "title": {
+              "en": "User DID",
+              "cs": "DID uživatele"
+            }
+          },
+          {
+            "name": "reason",
+            "type": "string",
+            "title": {
+              "en": "Notification reason",
+              "cs": "Důvod oznámení"
+            }
+          },
+          {
+            "name": "text",
+            "type": "string",
+            "title": {
+              "en": "Notification text",
+              "cs": "Text oznámení"
+            }
+          },
+          {
+            "name": "post_uri",
+            "type": "string",
+            "title": {
+              "en": "Post URI",
+              "cs": "URI příspěvku"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=bluesky-account"
+          }
+        ],
+        "id": "new_notification"
+      }
+    ],
+    "conditions": [
+      {
+        "title": {
+          "en": "Has unread notifications",
+          "cs": "Má nepřečtená oznámení"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=bluesky-account"
+          }
+        ],
+        "id": "has_unread_notifications"
+      },
+      {
+        "title": {
+          "en": "User is followed",
+          "cs": "Uživatel je sledován"
+        },
+        "titleFormatted": {
+          "en": "User [[actor]] is followed",
+          "cs": "Uživatel [[actor]] je sledován"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=bluesky-account"
+          },
+          {
+            "type": "text",
+            "name": "actor",
+            "title": {
+              "en": "Handle or DID",
+              "cs": "Handle nebo DID"
+            }
+          }
+        ],
+        "id": "is_user_followed"
+      },
+      {
+        "title": {
+          "en": "Profile matches value",
+          "cs": "Profil odpovídá hodnotě"
+        },
+        "titleFormatted": {
+          "en": "Profile matches [[value]]",
+          "cs": "Profil odpovídá [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=bluesky-account"
+          },
+          {
+            "type": "text",
+            "name": "value",
+            "title": {
+              "en": "Handle or display name",
+              "cs": "Handle nebo zobrazované jméno"
+            }
+          }
+        ],
+        "id": "profile_matches"
+      }
+    ],
     "actions": [
+      {
+        "title": {
+          "en": "Block user",
+          "cs": "Blokovat uživatele"
+        },
+        "titleFormatted": {
+          "en": "Block [[actor]]",
+          "cs": "Blokovat [[actor]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=bluesky-account"
+          },
+          {
+            "type": "text",
+            "name": "actor",
+            "title": {
+              "en": "Handle or DID",
+              "cs": "Handle nebo DID"
+            }
+          }
+        ],
+        "id": "block_user"
+      },
       {
         "title": {
           "en": "Create post",
@@ -65,6 +321,300 @@
           }
         ],
         "id": "create_post"
+      },
+      {
+        "title": {
+          "en": "Create quote post",
+          "cs": "Vytvořit citující příspěvek"
+        },
+        "titleFormatted": {
+          "en": "Create quote post with [[text]] for [[post_uri]]",
+          "cs": "Vytvořit citující příspěvek s textem [[text]] pro [[post_uri]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=bluesky-account"
+          },
+          {
+            "type": "text",
+            "name": "text",
+            "title": {
+              "en": "Post text",
+              "cs": "Text příspěvku"
+            }
+          },
+          {
+            "type": "text",
+            "name": "post_uri",
+            "title": {
+              "en": "Post URI",
+              "cs": "URI příspěvku"
+            }
+          }
+        ],
+        "id": "create_quote_post"
+      },
+      {
+        "title": {
+          "en": "Delete post",
+          "cs": "Smazat příspěvek"
+        },
+        "titleFormatted": {
+          "en": "Delete post [[post_uri]]",
+          "cs": "Smazat příspěvek [[post_uri]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=bluesky-account"
+          },
+          {
+            "type": "text",
+            "name": "post_uri",
+            "title": {
+              "en": "Post URI",
+              "cs": "URI příspěvku"
+            }
+          }
+        ],
+        "id": "delete_post"
+      },
+      {
+        "title": {
+          "en": "Follow user",
+          "cs": "Sledovat uživatele"
+        },
+        "titleFormatted": {
+          "en": "Follow [[actor]]",
+          "cs": "Sledovat [[actor]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=bluesky-account"
+          },
+          {
+            "type": "text",
+            "name": "actor",
+            "title": {
+              "en": "Handle or DID",
+              "cs": "Handle nebo DID"
+            }
+          }
+        ],
+        "id": "follow_user"
+      },
+      {
+        "title": {
+          "en": "Like post",
+          "cs": "Označit příspěvek jako To se mi líbí"
+        },
+        "titleFormatted": {
+          "en": "Like post [[post_uri]]",
+          "cs": "Označit příspěvek [[post_uri]] jako To se mi líbí"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=bluesky-account"
+          },
+          {
+            "type": "text",
+            "name": "post_uri",
+            "title": {
+              "en": "Post URI",
+              "cs": "URI příspěvku"
+            }
+          }
+        ],
+        "id": "like_post"
+      },
+      {
+        "title": {
+          "en": "Mute user",
+          "cs": "Ztlumit uživatele"
+        },
+        "titleFormatted": {
+          "en": "Mute [[actor]]",
+          "cs": "Ztlumit [[actor]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=bluesky-account"
+          },
+          {
+            "type": "text",
+            "name": "actor",
+            "title": {
+              "en": "Handle or DID",
+              "cs": "Handle nebo DID"
+            }
+          }
+        ],
+        "id": "mute_user"
+      },
+      {
+        "title": {
+          "en": "Repost post",
+          "cs": "Přeposlat příspěvek"
+        },
+        "titleFormatted": {
+          "en": "Repost post [[post_uri]]",
+          "cs": "Přeposlat příspěvek [[post_uri]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=bluesky-account"
+          },
+          {
+            "type": "text",
+            "name": "post_uri",
+            "title": {
+              "en": "Post URI",
+              "cs": "URI příspěvku"
+            }
+          }
+        ],
+        "id": "repost_post"
+      },
+      {
+        "title": {
+          "en": "Unblock user",
+          "cs": "Odblokovat uživatele"
+        },
+        "titleFormatted": {
+          "en": "Unblock [[actor]]",
+          "cs": "Odblokovat [[actor]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=bluesky-account"
+          },
+          {
+            "type": "text",
+            "name": "actor",
+            "title": {
+              "en": "Handle or DID",
+              "cs": "Handle nebo DID"
+            }
+          }
+        ],
+        "id": "unblock_user"
+      },
+      {
+        "title": {
+          "en": "Undo repost",
+          "cs": "Zrušit přeposlání"
+        },
+        "titleFormatted": {
+          "en": "Undo repost [[post_uri]]",
+          "cs": "Zrušit přeposlání [[post_uri]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=bluesky-account"
+          },
+          {
+            "type": "text",
+            "name": "post_uri",
+            "title": {
+              "en": "Post URI",
+              "cs": "URI příspěvku"
+            }
+          }
+        ],
+        "id": "undo_repost"
+      },
+      {
+        "title": {
+          "en": "Unfollow user",
+          "cs": "Přestat sledovat uživatele"
+        },
+        "titleFormatted": {
+          "en": "Unfollow [[actor]]",
+          "cs": "Přestat sledovat [[actor]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=bluesky-account"
+          },
+          {
+            "type": "text",
+            "name": "actor",
+            "title": {
+              "en": "Handle or DID",
+              "cs": "Handle nebo DID"
+            }
+          }
+        ],
+        "id": "unfollow_user"
+      },
+      {
+        "title": {
+          "en": "Remove like",
+          "cs": "Odebrat To se mi líbí"
+        },
+        "titleFormatted": {
+          "en": "Remove like [[post_uri]]",
+          "cs": "Odebrat To se mi líbí [[post_uri]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=bluesky-account"
+          },
+          {
+            "type": "text",
+            "name": "post_uri",
+            "title": {
+              "en": "Post URI",
+              "cs": "URI příspěvku"
+            }
+          }
+        ],
+        "id": "unlike_post"
+      },
+      {
+        "title": {
+          "en": "Unmute user",
+          "cs": "Zrušit ztlumení uživatele"
+        },
+        "titleFormatted": {
+          "en": "Unmute [[actor]]",
+          "cs": "Zrušit ztlumení [[actor]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=bluesky-account"
+          },
+          {
+            "type": "text",
+            "name": "actor",
+            "title": {
+              "en": "Handle or DID",
+              "cs": "Handle nebo DID"
+            }
+          }
+        ],
+        "id": "unmute_user"
       }
     ]
   },
@@ -79,7 +629,41 @@
         "cloud"
       ],
       "class": "other",
-      "capabilities": [],
+      "capabilities": [
+        "measure_followers",
+        "measure_following",
+        "measure_posts",
+        "measure_unread_notifications"
+      ],
+      "settings": [
+        {
+          "id": "display_name",
+          "type": "label",
+          "label": {
+            "en": "Display name",
+            "cs": "Zobrazované jméno"
+          },
+          "value": ""
+        },
+        {
+          "id": "handle",
+          "type": "label",
+          "label": {
+            "en": "Handle",
+            "cs": "Handle"
+          },
+          "value": ""
+        },
+        {
+          "id": "did",
+          "type": "label",
+          "label": {
+            "en": "DID",
+            "cs": "DID"
+          },
+          "value": ""
+        }
+      ],
       "images": {
         "small": "/drivers/bluesky-account/assets/images/small.png",
         "large": "/drivers/bluesky-account/assets/images/large.png",
@@ -90,6 +674,7 @@
           "id": "login_credentials",
           "template": "login_credentials",
           "options": {
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Bluesky_Logo.svg",
             "title": {
               "en": "Sign in to Bluesky",
               "cs": "Přihlásit se do Bluesky"
@@ -126,5 +711,55 @@
       ],
       "id": "bluesky-account"
     }
-  ]
+  ],
+  "capabilities": {
+    "measure_followers": {
+      "type": "number",
+      "title": {
+        "en": "Followers",
+        "cs": "Sledující"
+      },
+      "icon": "/capabilities/measure_followers.svg",
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "preventInsights": true
+    },
+    "measure_following": {
+      "type": "number",
+      "title": {
+        "en": "Following",
+        "cs": "Sledované účty"
+      },
+      "icon": "/capabilities/measure_following.svg",
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "preventInsights": true
+    },
+    "measure_posts": {
+      "type": "number",
+      "title": {
+        "en": "Posts",
+        "cs": "Příspěvky"
+      },
+      "icon": "/capabilities/measure_posts.svg",
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "preventInsights": true
+    },
+    "measure_unread_notifications": {
+      "type": "number",
+      "title": {
+        "en": "Unread notifications",
+        "cs": "Nepřečtená oznámení"
+      },
+      "icon": "/capabilities/measure_unread_notifications.svg",
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "preventInsights": true
+    }
+  }
 }

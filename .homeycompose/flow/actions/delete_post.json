@@ -1,0 +1,8 @@
+{
+  "title": { "en": "Delete post", "cs": "Smazat příspěvek" },
+  "titleFormatted": { "en": "Delete post [[post_uri]]", "cs": "Smazat příspěvek [[post_uri]]" },
+  "args": [
+    { "type": "device", "name": "device", "filter": "driver_id=bluesky-account" },
+    { "type": "text", "name": "post_uri", "title": { "en": "Post URI", "cs": "URI příspěvku" } }
+  ]
+}

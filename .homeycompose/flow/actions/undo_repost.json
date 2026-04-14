@@ -1,0 +1,8 @@
+{
+  "title": { "en": "Undo repost", "cs": "Zrušit přeposlání" },
+  "titleFormatted": { "en": "Undo repost [[post_uri]]", "cs": "Zrušit přeposlání [[post_uri]]" },
+  "args": [
+    { "type": "device", "name": "device", "filter": "driver_id=bluesky-account" },
+    { "type": "text", "name": "post_uri", "title": { "en": "Post URI", "cs": "URI příspěvku" } }
+  ]
+}

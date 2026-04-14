@@ -1,0 +1,12 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Posts",
+    "cs": "Příspěvky"
+  },
+  "icon": "/capabilities/measure_posts.svg",
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "preventInsights": true
+}

@@ -1,0 +1,8 @@
+{
+  "title": { "en": "Unmute user", "cs": "Zrušit ztlumení uživatele" },
+  "titleFormatted": { "en": "Unmute [[actor]]", "cs": "Zrušit ztlumení [[actor]]" },
+  "args": [
+    { "type": "device", "name": "device", "filter": "driver_id=bluesky-account" },
+    { "type": "text", "name": "actor", "title": { "en": "Handle or DID", "cs": "Handle nebo DID" } }
+  ]
+}

@@ -11,7 +11,8 @@
     "missing_app_password": "Zadejte heslo aplikace pro Bluesky.",
     "login_failed": "Přihlášení do Bluesky selhalo.",
     "session_missing": "Pro tento účet nebyla nalezena uložená relace Bluesky.",
-    "post_text_required": "Text příspěvku nesmí být prázdný."
+    "post_text_required": "Text příspěvku nesmí být prázdný.",
+    "post_not_found": "Odkazovaný příspěvek na Bluesky se nepodařilo najít."
   },
   "settings": {
     "account_handle": "Handle účtu",

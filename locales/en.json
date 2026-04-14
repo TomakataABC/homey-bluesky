@@ -11,7 +11,8 @@
     "missing_app_password": "Enter a Bluesky app password.",
     "login_failed": "Bluesky login failed.",
     "session_missing": "No saved Bluesky session was found for this account.",
-    "post_text_required": "Post text cannot be empty."
+    "post_text_required": "Post text cannot be empty.",
+    "post_not_found": "The referenced Bluesky post could not be found."
   },
   "settings": {
     "account_handle": "Account handle",
