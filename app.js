@@ -117,16 +117,6 @@ module.exports = class BlueskyApp extends Homey.App {
       return args.device.isFollowedByUser(args.actor);
     });
 
-    const followerCountCard = this.homey.flow.getConditionCard('follower_count_above');
-    followerCountCard.registerRunListener(async (args) => {
-      return args.device.isFollowerCountAbove(args.actor, args.threshold);
-    });
-
-    const postCountCard = this.homey.flow.getConditionCard('post_engagement_above');
-    postCountCard.registerRunListener(async (args) => {
-      return args.device.isPostEngagementAbove(args.post_uri, args.metric, args.threshold);
-    });
-
     const unreadNotificationsCard = this.homey.flow.getConditionCard('has_unread_notifications');
     unreadNotificationsCard.registerRunListener(async (args) => {
       return args.device.hasUnreadNotifications();

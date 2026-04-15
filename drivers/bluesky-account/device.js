@@ -202,21 +202,6 @@ module.exports = class BlueskyAccountDevice extends Homey.Device {
     });
   }
 
-  async isFollowerCountAbove(actor, threshold) {
-    return this._getBlueskyService().isFollowerCountAbove({
-      actor,
-      threshold,
-    });
-  }
-
-  async isPostEngagementAbove(postUri, metric, threshold) {
-    const state = await this._getBlueskyService().getPostEngagement({
-      did: this.getData().id,
-      postUri,
-    });
-    return this._getMetricValue(state, metric) > Number(threshold || 0);
-  }
-
   async hasUnreadNotifications() {
     const state = await this.refreshAccountState();
     return (state.notifications?.unreadCount || 0) > 0;

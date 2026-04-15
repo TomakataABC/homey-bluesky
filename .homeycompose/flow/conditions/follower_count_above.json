@@ -1,8 +1,0 @@
-{
-  "title": { "en": "Follower count above", "cs": "Počet sledujících je vyšší než" },
-  "titleFormatted": { "en": "Follower count of [[actor]] is above [[threshold]]", "cs": "Počet sledujících [[actor]] je vyšší než [[threshold]]" },
-  "args": [
-    { "type": "text", "name": "actor", "title": { "en": "Handle or DID", "cs": "Handle nebo DID" } },
-    { "type": "number", "name": "threshold", "title": { "en": "Threshold", "cs": "Limit" } }
-  ]
-}

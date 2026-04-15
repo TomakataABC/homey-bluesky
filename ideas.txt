@@ -79,8 +79,8 @@ Possible Homey Flow condition cards
 - [x] Is user muted
 - [x] Is user blocked
 - [x] Is followed by user
-- [x] Follower count of specific user is above X
-- [x] Specific post has more than X likes, reposts, or replies
+- Follower count of specific user is above X
+- Specific post has more than X likes, reposts, or replies
 
 Possible Homey Flow action cards
 
