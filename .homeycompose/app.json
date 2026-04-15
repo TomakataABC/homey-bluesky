@@ -14,8 +14,8 @@
     "cs": "Bluesky"
   },
   "description": {
-    "en": "Monitor and interact with your Bluesky account.",
-    "cs": "Sledujte interagujte se svým Bluesky účtem."
+    "en": "Stay up to date on what's happening online - anytime, anywhere.",
+    "cs": "Sledujte, co se děje na internetu - kdykoli a kdekoli."
   },
   "author": {
     "name": "Tomáš Pryl",
@@ -28,5 +28,10 @@
     "small": "/assets/images/small.png",
     "large": "/assets/images/large.png",
     "xlarge": "/assets/images/xlarge.png"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/TomakataABC/homey-bluesky/issues"
+  },
+  "source": "https://github.com/TomakataABC/homey-bluesky"
+
 }
