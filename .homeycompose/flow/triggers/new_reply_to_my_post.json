@@ -1,0 +1,13 @@
+{
+  "title": { "en": "New reply to my post", "cs": "Nová odpověď na můj příspěvek" },
+  "tokens": [
+    { "name": "user_handle", "type": "string", "title": { "en": "User handle", "cs": "Handle uživatele" } },
+    { "name": "user_name", "type": "string", "title": { "en": "User name", "cs": "Jméno uživatele" } },
+    { "name": "user_did", "type": "string", "title": { "en": "User DID", "cs": "DID uživatele" } },
+    { "name": "text", "type": "string", "title": { "en": "Reply text", "cs": "Text odpovědi" } },
+    { "name": "post_uri", "type": "string", "title": { "en": "Post URI", "cs": "URI příspěvku" } }
+  ],
+  "args": [
+    { "type": "device", "name": "device", "filter": "driver_id=bluesky-account" }
+  ]
+}

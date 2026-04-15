@@ -1,0 +1,8 @@
+{
+  "title": { "en": "Followed by user", "cs": "Sleduje uživatel" },
+  "titleFormatted": { "en": "Followed by [[actor]]", "cs": "Sleduje [[actor]]" },
+  "args": [
+    { "type": "device", "name": "device", "filter": "driver_id=bluesky-account" },
+    { "type": "text", "name": "actor", "title": { "en": "Handle or DID", "cs": "Handle nebo DID" } }
+  ]
+}

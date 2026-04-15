@@ -74,6 +74,54 @@
       },
       {
         "title": {
+          "en": "New like on my post",
+          "cs": "Nový like na můj příspěvek"
+        },
+        "tokens": [
+          {
+            "name": "user_handle",
+            "type": "string",
+            "title": {
+              "en": "User handle",
+              "cs": "Handle uživatele"
+            }
+          },
+          {
+            "name": "user_name",
+            "type": "string",
+            "title": {
+              "en": "User name",
+              "cs": "Jméno uživatele"
+            }
+          },
+          {
+            "name": "user_did",
+            "type": "string",
+            "title": {
+              "en": "User DID",
+              "cs": "DID uživatele"
+            }
+          },
+          {
+            "name": "post_uri",
+            "type": "string",
+            "title": {
+              "en": "Post URI",
+              "cs": "URI příspěvku"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=bluesky-account"
+          }
+        ],
+        "id": "new_like_on_my_post"
+      },
+      {
+        "title": {
           "en": "New mention",
           "cs": "Nová zmínka"
         },
@@ -191,9 +239,198 @@
           }
         ],
         "id": "new_notification"
+      },
+      {
+        "title": {
+          "en": "New quote of my post",
+          "cs": "Nová citace mého příspěvku"
+        },
+        "tokens": [
+          {
+            "name": "user_handle",
+            "type": "string",
+            "title": {
+              "en": "User handle",
+              "cs": "Handle uživatele"
+            }
+          },
+          {
+            "name": "user_name",
+            "type": "string",
+            "title": {
+              "en": "User name",
+              "cs": "Jméno uživatele"
+            }
+          },
+          {
+            "name": "user_did",
+            "type": "string",
+            "title": {
+              "en": "User DID",
+              "cs": "DID uživatele"
+            }
+          },
+          {
+            "name": "text",
+            "type": "string",
+            "title": {
+              "en": "Quote text",
+              "cs": "Text citace"
+            }
+          },
+          {
+            "name": "post_uri",
+            "type": "string",
+            "title": {
+              "en": "Post URI",
+              "cs": "URI příspěvku"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=bluesky-account"
+          }
+        ],
+        "id": "new_quote_of_my_post"
+      },
+      {
+        "title": {
+          "en": "New reply to my post",
+          "cs": "Nová odpověď na můj příspěvek"
+        },
+        "tokens": [
+          {
+            "name": "user_handle",
+            "type": "string",
+            "title": {
+              "en": "User handle",
+              "cs": "Handle uživatele"
+            }
+          },
+          {
+            "name": "user_name",
+            "type": "string",
+            "title": {
+              "en": "User name",
+              "cs": "Jméno uživatele"
+            }
+          },
+          {
+            "name": "user_did",
+            "type": "string",
+            "title": {
+              "en": "User DID",
+              "cs": "DID uživatele"
+            }
+          },
+          {
+            "name": "text",
+            "type": "string",
+            "title": {
+              "en": "Reply text",
+              "cs": "Text odpovědi"
+            }
+          },
+          {
+            "name": "post_uri",
+            "type": "string",
+            "title": {
+              "en": "Post URI",
+              "cs": "URI příspěvku"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=bluesky-account"
+          }
+        ],
+        "id": "new_reply_to_my_post"
+      },
+      {
+        "title": {
+          "en": "New repost of my post",
+          "cs": "Nový repost mého příspěvku"
+        },
+        "tokens": [
+          {
+            "name": "user_handle",
+            "type": "string",
+            "title": {
+              "en": "User handle",
+              "cs": "Handle uživatele"
+            }
+          },
+          {
+            "name": "user_name",
+            "type": "string",
+            "title": {
+              "en": "User name",
+              "cs": "Jméno uživatele"
+            }
+          },
+          {
+            "name": "user_did",
+            "type": "string",
+            "title": {
+              "en": "User DID",
+              "cs": "DID uživatele"
+            }
+          },
+          {
+            "name": "post_uri",
+            "type": "string",
+            "title": {
+              "en": "Post URI",
+              "cs": "URI příspěvku"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=bluesky-account"
+          }
+        ],
+        "id": "new_repost_of_my_post"
       }
     ],
     "conditions": [
+      {
+        "title": {
+          "en": "Follower count above",
+          "cs": "Počet sledujících je vyšší než"
+        },
+        "titleFormatted": {
+          "en": "Follower count of [[actor]] is above [[threshold]]",
+          "cs": "Počet sledujících [[actor]] je vyšší než [[threshold]]"
+        },
+        "args": [
+          {
+            "type": "text",
+            "name": "actor",
+            "title": {
+              "en": "Handle or DID",
+              "cs": "Handle nebo DID"
+            }
+          },
+          {
+            "type": "number",
+            "name": "threshold",
+            "title": {
+              "en": "Threshold",
+              "cs": "Limit"
+            }
+          }
+        ],
+        "id": "follower_count_above"
+      },
       {
         "title": {
           "en": "Has unread notifications",
@@ -207,6 +444,58 @@
           }
         ],
         "id": "has_unread_notifications"
+      },
+      {
+        "title": {
+          "en": "Followed by user",
+          "cs": "Sleduje uživatel"
+        },
+        "titleFormatted": {
+          "en": "Followed by [[actor]]",
+          "cs": "Sleduje [[actor]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=bluesky-account"
+          },
+          {
+            "type": "text",
+            "name": "actor",
+            "title": {
+              "en": "Handle or DID",
+              "cs": "Handle nebo DID"
+            }
+          }
+        ],
+        "id": "is_followed_by_user"
+      },
+      {
+        "title": {
+          "en": "User is blocked",
+          "cs": "Uživatel je blokován"
+        },
+        "titleFormatted": {
+          "en": "User [[actor]] is blocked",
+          "cs": "Uživatel [[actor]] je blokován"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=bluesky-account"
+          },
+          {
+            "type": "text",
+            "name": "actor",
+            "title": {
+              "en": "Handle or DID",
+              "cs": "Handle nebo DID"
+            }
+          }
+        ],
+        "id": "is_user_blocked"
       },
       {
         "title": {
@@ -236,12 +525,12 @@
       },
       {
         "title": {
-          "en": "Profile matches value",
-          "cs": "Profil odpovídá hodnotě"
+          "en": "User is muted",
+          "cs": "Uživatel je ztlumen"
         },
         "titleFormatted": {
-          "en": "Profile matches [[value]]",
-          "cs": "Profil odpovídá [[value]]"
+          "en": "User [[actor]] is muted",
+          "cs": "Uživatel [[actor]] je ztlumen"
         },
         "args": [
           {
@@ -251,14 +540,74 @@
           },
           {
             "type": "text",
-            "name": "value",
+            "name": "actor",
             "title": {
-              "en": "Handle or display name",
-              "cs": "Handle nebo zobrazované jméno"
+              "en": "Handle or DID",
+              "cs": "Handle nebo DID"
             }
           }
         ],
-        "id": "profile_matches"
+        "id": "is_user_muted"
+      },
+      {
+        "title": {
+          "en": "Post engagement above",
+          "cs": "Zapojení příspěvku je vyšší než"
+        },
+        "titleFormatted": {
+          "en": "Post [[post_uri]] has more than [[threshold]] [[metric]]",
+          "cs": "Příspěvek [[post_uri]] má více než [[threshold]] [[metric]]"
+        },
+        "args": [
+          {
+            "type": "text",
+            "name": "post_uri",
+            "title": {
+              "en": "Post URI",
+              "cs": "URI příspěvku"
+            }
+          },
+          {
+            "type": "dropdown",
+            "name": "metric",
+            "title": {
+              "en": "Metric",
+              "cs": "Metrika"
+            },
+            "values": [
+              {
+                "id": "likes",
+                "title": {
+                  "en": "likes",
+                  "cs": "lajků"
+                }
+              },
+              {
+                "id": "reposts",
+                "title": {
+                  "en": "reposts",
+                  "cs": "repostů"
+                }
+              },
+              {
+                "id": "replies",
+                "title": {
+                  "en": "replies",
+                  "cs": "odpovědí"
+                }
+              }
+            ]
+          },
+          {
+            "type": "number",
+            "name": "threshold",
+            "title": {
+              "en": "Threshold",
+              "cs": "Limit"
+            }
+          }
+        ],
+        "id": "post_engagement_above"
       }
     ],
     "actions": [
@@ -641,7 +990,7 @@
           "type": "label",
           "label": {
             "en": "Display name",
-            "cs": "Zobrazované jméno"
+            "cs": "Jméno"
           },
           "value": ""
         },

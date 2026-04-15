@@ -20,7 +20,7 @@
       "type": "label",
       "label": {
         "en": "Display name",
-        "cs": "Zobrazované jméno"
+        "cs": "Jméno"
       },
       "value": ""
     },

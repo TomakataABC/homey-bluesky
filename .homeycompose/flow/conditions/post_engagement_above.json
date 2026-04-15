@@ -1,0 +1,13 @@
+{
+  "title": { "en": "Post engagement above", "cs": "Zapojení příspěvku je vyšší než" },
+  "titleFormatted": { "en": "Post [[post_uri]] has more than [[threshold]] [[metric]]", "cs": "Příspěvek [[post_uri]] má více než [[threshold]] [[metric]]" },
+  "args": [
+    { "type": "text", "name": "post_uri", "title": { "en": "Post URI", "cs": "URI příspěvku" } },
+    { "type": "dropdown", "name": "metric", "title": { "en": "Metric", "cs": "Metrika" }, "values": [
+      { "id": "likes", "title": { "en": "likes", "cs": "lajků" } },
+      { "id": "reposts", "title": { "en": "reposts", "cs": "repostů" } },
+      { "id": "replies", "title": { "en": "replies", "cs": "odpovědí" } }
+    ] },
+    { "type": "number", "name": "threshold", "title": { "en": "Threshold", "cs": "Limit" } }
+  ]
+}

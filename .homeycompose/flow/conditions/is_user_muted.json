@@ -1,0 +1,8 @@
+{
+  "title": { "en": "User is muted", "cs": "Uživatel je ztlumen" },
+  "titleFormatted": { "en": "User [[actor]] is muted", "cs": "Uživatel [[actor]] je ztlumen" },
+  "args": [
+    { "type": "device", "name": "device", "filter": "driver_id=bluesky-account" },
+    { "type": "text", "name": "actor", "title": { "en": "Handle or DID", "cs": "Handle nebo DID" } }
+  ]
+}

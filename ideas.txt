@@ -4,7 +4,7 @@ This file summarizes realistic feature ideas based on the official Bluesky / ATP
 
 Core actions the app could support
 
-- Create a reply
+- [x] Create a reply
 - [x] Quote a post
 - [x] Repost and undo repost
 - [x] Like and unlike a post
@@ -12,18 +12,11 @@ Core actions the app could support
 - Post with images
 - Post with video
 - Post with link embeds
-- Post with mentions and rich-text facets
-- Post with reply restrictions / thread gates
+- [x] Post with mentions and rich-text facets
 - [x] Follow and unfollow users
 - [x] Block and unblock users
 - [x] Mute and unmute users
-- Create and manage lists
-- Add and remove users from lists
-- Mute and block lists
 - Update display name, bio, avatar, and banner
-- Change notification preferences
-- Submit moderation reports
-- Potentially send direct messages via official chat APIs
 
 Data the app could report
 
@@ -41,9 +34,9 @@ Notifications and activity
 - [x] Unread notification count
 - [x] Notification list
 - [x] Mentions
-- Likes on your posts
-- Reposts of your posts
-- Replies to your posts
+- [x] Likes on your posts
+- [x] Reposts of your posts
+- [x] Replies to your posts
 - [x] New followers
 
 Feed and post data
@@ -60,24 +53,16 @@ Relationship and moderation state
 - Whether a target user follows you
 - Whether a user is muted
 - Whether a user is blocked
-- Whether a list is muted
-- Whether a list is blocked
-
-List data
-- Lists you own
-- Lists a user is in
-- List member count
-- Latest activity in a list feed
 
 Possible Homey Flow trigger cards
 
 - [x] New mention
 - [x] New follower
-- New reply to my post
-- New like on my post
-- New repost of my post
-- New quote of my post
-- Unread notifications became non-zero
+- [x] New reply to my post
+- [x] New like on my post
+- [x] New repost of my post
+- [x] New quote of my post
+- [x] Unread notifications became non-zero
 - Watched author posted
 - Custom feed has a new post
 - Timeline has a new post matching criteria
@@ -86,20 +71,16 @@ Possible Homey Flow trigger cards
 - Following count changed
 - Profile changed
 - Post engagement crossed a threshold
-- Mute, block, or list state changed
 
 Possible Homey Flow condition cards
 
 - Has unread notifications
 - [x] Is user followed
-- Is user muted
-- Is user blocked
-- Is list muted
-- Is list blocked
-- Follower count is above X
-- Latest post contains text, link, or image
-- Specific post has more than X likes, reposts, or replies
-- [x] Profile handle or display name matches a value
+- [x] Is user muted
+- [x] Is user blocked
+- [x] Is followed by user
+- [x] Follower count of specific user is above X
+- [x] Specific post has more than X likes, reposts, or replies
 
 Possible Homey Flow action cards
 
@@ -111,8 +92,6 @@ Possible Homey Flow action cards
 - [x] Follow / unfollow user
 - [x] Mute / unmute user
 - [x] Block / unblock user
-- Add user to list
-- Remove user from list
 - Update profile details
 - Change notification settings
 - Send DM if chat support is added
@@ -123,48 +102,6 @@ Possible Homey widgets
 - [ ] Unread notifications widget with count and latest notifications (implemented but disabled for now)
 - [ ] Latest post widget with text, timestamp, and engagement counts (implemented but disabled for now)
 - Engagement widget for a selected post
-- Watched feed widget for latest posts from an author, list, or custom feed
 - Mentions widget
 - Thread or reply tracker widget
-- List activity widget
 - Media spotlight widget
-- DM or conversation widget
-
-Important technical notes
-
-- Most read and event features will likely require polling.
-- Bluesky has a firehose for public network updates, but it is not the simplest source for per-account Homey automations.
-- Notifications, mutes, some preferences, and chat are authenticated or private.
-- Media support adds extra complexity.
-- Moderation labels and visibility rules must be respected in widgets and data displays.
-
-Suggested roadmap
-
-Phase 1
-- Create post
-- Reply to post
-- Like and repost
-- New mention trigger
-- New follower trigger
-- Unread notification count
-- Profile summary widget
-
-Phase 2
-- Post with images
-- Follow and unfollow
-- Watched author posted trigger
-- Post engagement triggers
-- Latest post widget
-- Notifications widget
-
-Phase 3
-- List support
-- Profile update actions
-- Moderation actions
-- Custom feed monitoring
-- Thread tracking
-- DM features if they prove useful
-
-Summary
-
-Bluesky is capable of supporting a much broader Homey integration than posting alone. The best areas for expansion are notifications, engagement tracking, profile and graph status, feed monitoring, and a small set of focused widgets.

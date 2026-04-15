@@ -102,9 +102,29 @@ module.exports = class BlueskyApp extends Homey.App {
       return args.device.isUserFollowed(args.actor);
     });
 
-    const profileMatchCard = this.homey.flow.getConditionCard('profile_matches');
-    profileMatchCard.registerRunListener(async (args) => {
-      return args.device.doesProfileMatch(args.value);
+    const mutedCard = this.homey.flow.getConditionCard('is_user_muted');
+    mutedCard.registerRunListener(async (args) => {
+      return args.device.isUserMuted(args.actor);
+    });
+
+    const blockedCard = this.homey.flow.getConditionCard('is_user_blocked');
+    blockedCard.registerRunListener(async (args) => {
+      return args.device.isUserBlocked(args.actor);
+    });
+
+    const followedByCard = this.homey.flow.getConditionCard('is_followed_by_user');
+    followedByCard.registerRunListener(async (args) => {
+      return args.device.isFollowedByUser(args.actor);
+    });
+
+    const followerCountCard = this.homey.flow.getConditionCard('follower_count_above');
+    followerCountCard.registerRunListener(async (args) => {
+      return args.device.isFollowerCountAbove(args.actor, args.threshold);
+    });
+
+    const postCountCard = this.homey.flow.getConditionCard('post_engagement_above');
+    postCountCard.registerRunListener(async (args) => {
+      return args.device.isPostEngagementAbove(args.post_uri, args.metric, args.threshold);
     });
 
     const unreadNotificationsCard = this.homey.flow.getConditionCard('has_unread_notifications');
@@ -117,6 +137,10 @@ module.exports = class BlueskyApp extends Homey.App {
     this.newMentionTrigger = this.homey.flow.getDeviceTriggerCard('new_mention');
     this.newFollowerTrigger = this.homey.flow.getDeviceTriggerCard('new_follower');
     this.newNotificationTrigger = this.homey.flow.getDeviceTriggerCard('new_notification');
+    this.newReplyTrigger = this.homey.flow.getDeviceTriggerCard('new_reply_to_my_post');
+    this.newLikeTrigger = this.homey.flow.getDeviceTriggerCard('new_like_on_my_post');
+    this.newRepostTrigger = this.homey.flow.getDeviceTriggerCard('new_repost_of_my_post');
+    this.newQuoteTrigger = this.homey.flow.getDeviceTriggerCard('new_quote_of_my_post');
   }
 
   async handleDeviceUpdates(device, updates) {
@@ -140,6 +164,44 @@ module.exports = class BlueskyApp extends Homey.App {
 
       if (notification.reason === 'mention') {
         await this.newMentionTrigger.trigger(device, {
+          user_handle: notification.author.handle || '',
+          user_name: notification.author.displayName || '',
+          user_did: notification.author.did || '',
+          text: notification.text || '',
+          post_uri: notification.uri || '',
+        });
+      }
+
+      if (notification.reason === 'reply') {
+        await this.newReplyTrigger.trigger(device, {
+          user_handle: notification.author.handle || '',
+          user_name: notification.author.displayName || '',
+          user_did: notification.author.did || '',
+          text: notification.text || '',
+          post_uri: notification.uri || '',
+        });
+      }
+
+      if (notification.reason === 'like') {
+        await this.newLikeTrigger.trigger(device, {
+          user_handle: notification.author.handle || '',
+          user_name: notification.author.displayName || '',
+          user_did: notification.author.did || '',
+          post_uri: notification.uri || '',
+        });
+      }
+
+      if (notification.reason === 'repost') {
+        await this.newRepostTrigger.trigger(device, {
+          user_handle: notification.author.handle || '',
+          user_name: notification.author.displayName || '',
+          user_did: notification.author.did || '',
+          post_uri: notification.uri || '',
+        });
+      }
+
+      if (notification.reason === 'quote') {
+        await this.newQuoteTrigger.trigger(device, {
           user_handle: notification.author.handle || '',
           user_name: notification.author.displayName || '',
           user_did: notification.author.did || '',

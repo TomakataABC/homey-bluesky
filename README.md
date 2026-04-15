@@ -32,7 +32,7 @@ homey app run
 
 ## Authentication
 
-The app uses a Bluesky handle together with an app password.
+The app uses a Bluesky handle together with the account password or an app password for 2FA secured accounts.
 
 ## Notes
 

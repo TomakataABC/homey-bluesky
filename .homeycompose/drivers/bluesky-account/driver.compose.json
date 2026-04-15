@@ -20,7 +20,7 @@
       "type": "label",
       "label": {
         "en": "Display name",
-        "cs": "Zobrazované jméno"
+        "cs": "Jméno"
       },
       "value": ""
     },
@@ -53,7 +53,7 @@
       "id": "login_credentials",
       "template": "login_credentials",
       "options": {
-        "logo": "logo.svg",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Bluesky_Logo.svg",
         "title": {
           "en": "Sign in to Bluesky",
           "cs": "Přihlásit se do Bluesky"
@@ -63,12 +63,12 @@
           "cs": "Handle"
         },
         "usernamePlaceholder": {
-          "en": "alice.bsky.social",
-          "cs": "alice.bsky.social"
+          "en": "waflerone.bsky.social",
+          "cs": "waflerone.bsky.social"
         },
         "passwordLabel": {
-          "en": "App password",
-          "cs": "Heslo aplikace"
+          "en": "Password/App password (2FA)",
+          "cs": "Heslo/App password (2FA)"
         },
         "passwordPlaceholder": {
           "en": "xxxx-xxxx-xxxx-xxxx",

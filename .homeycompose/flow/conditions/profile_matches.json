@@ -1,8 +1,0 @@
-{
-  "title": { "en": "Profile matches value", "cs": "Profil odpovídá hodnotě" },
-  "titleFormatted": { "en": "Profile matches [[value]]", "cs": "Profil odpovídá [[value]]" },
-  "args": [
-    { "type": "device", "name": "device", "filter": "driver_id=bluesky-account" },
-    { "type": "text", "name": "value", "title": { "en": "Handle or display name", "cs": "Handle nebo zobrazované jméno" } }
-  ]
-}

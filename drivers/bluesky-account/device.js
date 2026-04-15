@@ -41,6 +41,15 @@ module.exports = class BlueskyAccountDevice extends Homey.Device {
     }
   }
 
+  _getMetricValue(state, metric) {
+    switch (String(metric || '').toLowerCase()) {
+      case 'likes': return state?.likeCount || 0;
+      case 'reposts': return state?.repostCount || 0;
+      case 'replies': return state?.replyCount || 0;
+      default: return 0;
+    }
+  }
+
   async applyAccountState(state) {
     if (!state || !state.profile) {
       return;
@@ -172,11 +181,40 @@ module.exports = class BlueskyAccountDevice extends Homey.Device {
     });
   }
 
-  async doesProfileMatch(value) {
-    return this._getBlueskyService().doesProfileMatch({
+  async isUserMuted(actor) {
+    return this._getBlueskyService().isUserMuted({
       did: this.getData().id,
-      value,
+      actor,
     });
+  }
+
+  async isUserBlocked(actor) {
+    return this._getBlueskyService().isUserBlocked({
+      did: this.getData().id,
+      actor,
+    });
+  }
+
+  async isFollowedByUser(actor) {
+    return this._getBlueskyService().isFollowedByUser({
+      did: this.getData().id,
+      actor,
+    });
+  }
+
+  async isFollowerCountAbove(actor, threshold) {
+    return this._getBlueskyService().isFollowerCountAbove({
+      actor,
+      threshold,
+    });
+  }
+
+  async isPostEngagementAbove(postUri, metric, threshold) {
+    const state = await this._getBlueskyService().getPostEngagement({
+      did: this.getData().id,
+      postUri,
+    });
+    return this._getMetricValue(state, metric) > Number(threshold || 0);
   }
 
   async hasUnreadNotifications() {
