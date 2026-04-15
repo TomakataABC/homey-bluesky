@@ -2,5 +2,9 @@
   "1.0.0": {
     "en": "The initial release of the app for Homey app-store.",
     "cs": "Úvodní vydání aplikace na Homey app-store."
+  },
+  "1.0.1": {
+    "en": "Changed the app target to only Homey local.",
+    "cs": "Změněny instalační platformy na pouze lokální instance Homey."
   }
 }
