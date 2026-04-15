@@ -6,5 +6,13 @@
   "1.0.1": {
     "en": "Changed the app target to only Homey local.",
     "cs": "Změněny instalační platformy na pouze lokální instance Homey."
+  },
+  "1.0.2": {
+    "en": "Logo display fix.",
+    "cs": "Oprava viditelnosti loga."
+  },
+  "1.0.3": {
+    "en": "Image changes.",
+    "cs": "Změny u obrázků."
   }
 }

@@ -1,6 +1,6 @@
 {
   "id": "app.bsky",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "compatibility": ">=12.4.0",
   "sdk": 3,
   "runtime": "nodejs",
