@@ -4,8 +4,7 @@
     "cs": "Účet Bluesky"
   },
   "platforms": [
-    "local",
-    "cloud"
+    "local"
   ],
   "class": "other",
   "capabilities": [

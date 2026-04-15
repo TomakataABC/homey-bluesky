@@ -7,8 +7,7 @@
   "runtime": "nodejs",
   "brandColor": "#1185FE",
   "platforms": [
-    "local",
-    "cloud"
+    "local"
   ],
   "name": {
     "en": "Bluesky",
@@ -978,8 +977,7 @@
         "cs": "Účet Bluesky"
       },
       "platforms": [
-        "local",
-        "cloud"
+        "local"
       ],
       "class": "other",
       "capabilities": [
