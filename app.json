@@ -30,6 +30,10 @@
     "large": "/assets/images/large.png",
     "xlarge": "/assets/images/xlarge.png"
   },
+  "bugs": {
+    "url": "https://github.com/TomakataABC/homey-bluesky/issues"
+  },
+  "source": "https://github.com/TomakataABC/homey-bluesky",
   "flow": {
     "triggers": [
       {
