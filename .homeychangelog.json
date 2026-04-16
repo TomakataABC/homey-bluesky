@@ -14,5 +14,8 @@
   "1.0.3": {
     "en": "Image changes.",
     "cs": "Změny u obrázků."
+  },
+  "1.0.4": {
+    "en": "Added Dutch translations"
   }
 }
