@@ -1,11 +1,11 @@
 {
-  "title": { "en": "New mention", "cs": "Nová zmínka" },
+  "title": { "en": "New mention", "cs": "Nová zmínka", "nl": "Nieuwe vermelding" },
   "tokens": [
-    { "name": "user_handle", "type": "string", "title": { "en": "User handle", "cs": "Handle uživatele" } },
-    { "name": "user_name", "type": "string", "title": { "en": "User name", "cs": "Jméno uživatele" } },
-    { "name": "user_did", "type": "string", "title": { "en": "User DID", "cs": "DID uživatele" } },
-    { "name": "text", "type": "string", "title": { "en": "Mention text", "cs": "Text zmínky" } },
-    { "name": "post_uri", "type": "string", "title": { "en": "Post URI", "cs": "URI příspěvku" } }
+    { "name": "user_handle", "type": "string", "title": { "en": "User handle", "cs": "Handle uživatele", "nl": "Handle van gebruiker" } },
+    { "name": "user_name", "type": "string", "title": { "en": "User name", "cs": "Jméno uživatele", "nl": "Naam van gebruiker" } },
+    { "name": "user_did", "type": "string", "title": { "en": "User DID", "cs": "DID uživatele", "nl": "DID van gebruiker" } },
+    { "name": "text", "type": "string", "title": { "en": "Mention text", "cs": "Text zmínky", "nl": "Tekst van vermelding" } },
+    { "name": "post_uri", "type": "string", "title": { "en": "Post URI", "cs": "URI příspěvku", "nl": "Bericht-URI" } }
   ],
   "args": [
     { "type": "device", "name": "device", "filter": "driver_id=bluesky-account" }

@@ -1,8 +1,8 @@
 {
-  "title": { "en": "User is muted", "cs": "Uživatel je ztlumen" },
-  "titleFormatted": { "en": "User [[actor]] is muted", "cs": "Uživatel [[actor]] je ztlumen" },
+  "title": { "en": "User is muted", "cs": "Uživatel je ztlumen", "nl": "Gebruiker is gedempt" },
+  "titleFormatted": { "en": "User [[actor]] is muted", "cs": "Uživatel [[actor]] je ztlumen", "nl": "Gebruiker [[actor]] is gedempt" },
   "args": [
     { "type": "device", "name": "device", "filter": "driver_id=bluesky-account" },
-    { "type": "text", "name": "actor", "title": { "en": "Handle or DID", "cs": "Handle nebo DID" } }
+    { "type": "text", "name": "actor", "title": { "en": "Handle or DID", "cs": "Handle nebo DID", "nl": "Handle of DID" } }
   ]
 }

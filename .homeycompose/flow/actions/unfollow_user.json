@@ -1,8 +1,8 @@
 {
-  "title": { "en": "Unfollow user", "cs": "Přestat sledovat uživatele" },
-  "titleFormatted": { "en": "Unfollow [[actor]]", "cs": "Přestat sledovat [[actor]]" },
+  "title": { "en": "Unfollow user", "cs": "Přestat sledovat uživatele", "nl": "Gebruiker ontvolgen" },
+  "titleFormatted": { "en": "Unfollow [[actor]]", "cs": "Přestat sledovat [[actor]]", "nl": "[[actor]] ontvolgen" },
   "args": [
     { "type": "device", "name": "device", "filter": "driver_id=bluesky-account" },
-    { "type": "text", "name": "actor", "title": { "en": "Handle or DID", "cs": "Handle nebo DID" } }
+    { "type": "text", "name": "actor", "title": { "en": "Handle or DID", "cs": "Handle nebo DID", "nl": "Handle of DID" } }
   ]
 }

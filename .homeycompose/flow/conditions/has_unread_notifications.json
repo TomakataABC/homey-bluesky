@@ -1,5 +1,5 @@
 {
-  "title": { "en": "Has unread notifications", "cs": "Má nepřečtená oznámení" },
+  "title": { "en": "Has unread notifications", "cs": "Má nepřečtená oznámení", "nl": "Heeft ongelezen meldingen" },
   "args": [
     { "type": "device", "name": "device", "filter": "driver_id=bluesky-account" }
   ]

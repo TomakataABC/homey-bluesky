@@ -3,7 +3,8 @@
   "type": "label",
   "label": {
     "en": "Handle",
-    "cs": "Handle"
+    "cs": "Handle",
+    "nl": "Handle"
   },
   "value": ""
 }

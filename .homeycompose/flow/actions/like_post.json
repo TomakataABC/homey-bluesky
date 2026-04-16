@@ -1,8 +1,8 @@
 {
-  "title": { "en": "Like post", "cs": "Označit příspěvek jako To se mi líbí" },
-  "titleFormatted": { "en": "Like post [[post_uri]]", "cs": "Označit příspěvek [[post_uri]] jako To se mi líbí" },
+  "title": { "en": "Like post", "cs": "Označit příspěvek jako To se mi líbí", "nl": "Bericht liken" },
+  "titleFormatted": { "en": "Like post [[post_uri]]", "cs": "Označit příspěvek [[post_uri]] jako To se mi líbí", "nl": "Bericht [[post_uri]] liken" },
   "args": [
     { "type": "device", "name": "device", "filter": "driver_id=bluesky-account" },
-    { "type": "text", "name": "post_uri", "title": { "en": "Post URI", "cs": "URI příspěvku" } }
+    { "type": "text", "name": "post_uri", "title": { "en": "Post URI", "cs": "URI příspěvku", "nl": "Bericht-URI" } }
   ]
 }

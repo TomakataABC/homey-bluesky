@@ -1,8 +1,8 @@
 {
-  "title": { "en": "Followed by user", "cs": "Sleduje uživatel" },
-  "titleFormatted": { "en": "Followed by [[actor]]", "cs": "Sleduje [[actor]]" },
+  "title": { "en": "Followed by user", "cs": "Sleduje uživatel", "nl": "Wordt gevolgd door gebruiker" },
+  "titleFormatted": { "en": "Followed by [[actor]]", "cs": "Sleduje [[actor]]", "nl": "Wordt gevolgd door [[actor]]" },
   "args": [
     { "type": "device", "name": "device", "filter": "driver_id=bluesky-account" },
-    { "type": "text", "name": "actor", "title": { "en": "Handle or DID", "cs": "Handle nebo DID" } }
+    { "type": "text", "name": "actor", "title": { "en": "Handle or DID", "cs": "Handle nebo DID", "nl": "Handle of DID" } }
   ]
 }

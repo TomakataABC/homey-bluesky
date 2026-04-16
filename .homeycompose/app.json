@@ -1,6 +1,6 @@
 {
   "id": "app.bsky",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "compatibility": ">=12.4.0",
   "sdk": 3,
   "runtime": "nodejs",
@@ -10,11 +10,13 @@
   ],
   "name": {
     "en": "Bluesky",
-    "cs": "Bluesky"
+    "cs": "Bluesky",
+    "nl": "Bluesky"
   },
   "description": {
     "en": "Stay up to date on what's happening online - anytime, anywhere.",
-    "cs": "Sledujte, co se děje na internetu - kdykoli a kdekoli."
+    "cs": "Sledujte, co se děje na internetu - kdykoli a kdekoli.",
+    "nl": "Blijf op de hoogte van de online ontwikkelingen - altijd, overal."
   },
   "author": {
     "name": "Tomáš Pryl",

@@ -2,7 +2,8 @@
   "type": "number",
   "title": {
     "en": "Unread notifications",
-    "cs": "Nepřečtená oznámení"
+    "cs": "Nepřečtená oznámení",
+    "nl": "Ongelezen meldingen"
   },
   "icon": "/capabilities/measure_unread_notifications.svg",
   "getable": true,

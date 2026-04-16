@@ -2,7 +2,8 @@
   "type": "number",
   "title": {
     "en": "Following",
-    "cs": "Sledované účty"
+    "cs": "Sledované účty",
+    "nl": "Volgend"
   },
   "icon": "/capabilities/measure_following.svg",
   "getable": true,

@@ -1,10 +1,10 @@
 {
-  "title": { "en": "New repost of my post", "cs": "Nový repost mého příspěvku" },
+  "title": { "en": "New repost of my post", "cs": "Nový repost mého příspěvku", "nl": "Nieuwe repost van mijn bericht" },
   "tokens": [
-    { "name": "user_handle", "type": "string", "title": { "en": "User handle", "cs": "Handle uživatele" } },
-    { "name": "user_name", "type": "string", "title": { "en": "User name", "cs": "Jméno uživatele" } },
-    { "name": "user_did", "type": "string", "title": { "en": "User DID", "cs": "DID uživatele" } },
-    { "name": "post_uri", "type": "string", "title": { "en": "Post URI", "cs": "URI příspěvku" } }
+    { "name": "user_handle", "type": "string", "title": { "en": "User handle", "cs": "Handle uživatele", "nl": "Handle van gebruiker" } },
+    { "name": "user_name", "type": "string", "title": { "en": "User name", "cs": "Jméno uživatele", "nl": "Naam van gebruiker" } },
+    { "name": "user_did", "type": "string", "title": { "en": "User DID", "cs": "DID uživatele", "nl": "DID van gebruiker" } },
+    { "name": "post_uri", "type": "string", "title": { "en": "Post URI", "cs": "URI příspěvku", "nl": "Bericht-URI" } }
   ],
   "args": [
     { "type": "device", "name": "device", "filter": "driver_id=bluesky-account" }

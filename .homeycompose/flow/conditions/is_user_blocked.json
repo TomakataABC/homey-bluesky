@@ -1,8 +1,8 @@
 {
-  "title": { "en": "User is blocked", "cs": "Uživatel je blokován" },
-  "titleFormatted": { "en": "User [[actor]] is blocked", "cs": "Uživatel [[actor]] je blokován" },
+  "title": { "en": "User is blocked", "cs": "Uživatel je blokován", "nl": "Gebruiker is geblokkeerd" },
+  "titleFormatted": { "en": "User [[actor]] is blocked", "cs": "Uživatel [[actor]] je blokován", "nl": "Gebruiker [[actor]] is geblokkeerd" },
   "args": [
     { "type": "device", "name": "device", "filter": "driver_id=bluesky-account" },
-    { "type": "text", "name": "actor", "title": { "en": "Handle or DID", "cs": "Handle nebo DID" } }
+    { "type": "text", "name": "actor", "title": { "en": "Handle or DID", "cs": "Handle nebo DID", "nl": "Handle of DID" } }
   ]
 }

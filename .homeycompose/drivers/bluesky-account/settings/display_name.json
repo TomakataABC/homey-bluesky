@@ -3,7 +3,8 @@
   "type": "label",
   "label": {
     "en": "Display name",
-    "cs": "Jméno"
+    "cs": "Jméno",
+    "nl": "Weergavenaam"
   },
   "value": ""
 }

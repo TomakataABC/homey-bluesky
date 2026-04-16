@@ -1,8 +1,8 @@
 {
-  "title": { "en": "User is followed", "cs": "Uživatel je sledován" },
-  "titleFormatted": { "en": "User [[actor]] is followed", "cs": "Uživatel [[actor]] je sledován" },
+  "title": { "en": "User is followed", "cs": "Uživatel je sledován", "nl": "Gebruiker wordt gevolgd" },
+  "titleFormatted": { "en": "User [[actor]] is followed", "cs": "Uživatel [[actor]] je sledován", "nl": "Gebruiker [[actor]] wordt gevolgd" },
   "args": [
     { "type": "device", "name": "device", "filter": "driver_id=bluesky-account" },
-    { "type": "text", "name": "actor", "title": { "en": "Handle or DID", "cs": "Handle nebo DID" } }
+    { "type": "text", "name": "actor", "title": { "en": "Handle or DID", "cs": "Handle nebo DID", "nl": "Handle of DID" } }
   ]
 }

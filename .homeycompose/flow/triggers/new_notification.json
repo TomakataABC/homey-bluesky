@@ -1,12 +1,12 @@
 {
-  "title": { "en": "New notification", "cs": "Nové oznámení" },
+  "title": { "en": "New notification", "cs": "Nové oznámení", "nl": "Nieuwe melding" },
   "tokens": [
-    { "name": "user_handle", "type": "string", "title": { "en": "User handle", "cs": "Handle uživatele" } },
-    { "name": "user_name", "type": "string", "title": { "en": "User name", "cs": "Jméno uživatele" } },
-    { "name": "user_did", "type": "string", "title": { "en": "User DID", "cs": "DID uživatele" } },
-    { "name": "reason", "type": "string", "title": { "en": "Notification reason", "cs": "Důvod oznámení" } },
-    { "name": "text", "type": "string", "title": { "en": "Notification text", "cs": "Text oznámení" } },
-    { "name": "post_uri", "type": "string", "title": { "en": "Post URI", "cs": "URI příspěvku" } }
+    { "name": "user_handle", "type": "string", "title": { "en": "User handle", "cs": "Handle uživatele", "nl": "Handle van gebruiker" } },
+    { "name": "user_name", "type": "string", "title": { "en": "User name", "cs": "Jméno uživatele", "nl": "Naam van gebruiker" } },
+    { "name": "user_did", "type": "string", "title": { "en": "User DID", "cs": "DID uživatele", "nl": "DID van gebruiker" } },
+    { "name": "reason", "type": "string", "title": { "en": "Notification reason", "cs": "Důvod oznámení", "nl": "Reden van melding" } },
+    { "name": "text", "type": "string", "title": { "en": "Notification text", "cs": "Text oznámení", "nl": "Tekst van melding" } },
+    { "name": "post_uri", "type": "string", "title": { "en": "Post URI", "cs": "URI příspěvku", "nl": "Bericht-URI" } }
   ],
   "args": [
     { "type": "device", "name": "device", "filter": "driver_id=bluesky-account" }

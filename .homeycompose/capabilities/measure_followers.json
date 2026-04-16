@@ -2,7 +2,8 @@
   "type": "number",
   "title": {
     "en": "Followers",
-    "cs": "Sledující"
+    "cs": "Sledující",
+    "nl": "Volgers"
   },
   "icon": "/capabilities/measure_followers.svg",
   "getable": true,

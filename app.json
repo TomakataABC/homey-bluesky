@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "app.bsky",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "compatibility": ">=12.4.0",
   "sdk": 3,
   "runtime": "nodejs",
@@ -11,11 +11,13 @@
   ],
   "name": {
     "en": "Bluesky",
-    "cs": "Bluesky"
+    "cs": "Bluesky",
+    "nl": "Bluesky"
   },
   "description": {
     "en": "Stay up to date on what's happening online - anytime, anywhere.",
-    "cs": "Sledujte, co se děje na internetu - kdykoli a kdekoli."
+    "cs": "Sledujte, co se děje na internetu - kdykoli a kdekoli.",
+    "nl": "Blijf op de hoogte van de online ontwikkelingen - altijd, overal."
   },
   "author": {
     "name": "Tomáš Pryl",
@@ -50,7 +52,8 @@
       {
         "title": {
           "en": "New follower",
-          "cs": "Nový sledující"
+          "cs": "Nový sledující",
+          "nl": "Nieuwe volger"
         },
         "tokens": [
           {
@@ -58,7 +61,8 @@
             "type": "string",
             "title": {
               "en": "User handle",
-              "cs": "Handle uživatele"
+              "cs": "Handle uživatele",
+              "nl": "Handle van gebruiker"
             }
           },
           {
@@ -66,7 +70,8 @@
             "type": "string",
             "title": {
               "en": "User name",
-              "cs": "Jméno uživatele"
+              "cs": "Jméno uživatele",
+              "nl": "Naam van gebruiker"
             }
           },
           {
@@ -74,7 +79,8 @@
             "type": "string",
             "title": {
               "en": "User DID",
-              "cs": "DID uživatele"
+              "cs": "DID uživatele",
+              "nl": "DID van gebruiker"
             }
           }
         ],
@@ -90,7 +96,8 @@
       {
         "title": {
           "en": "New like on my post",
-          "cs": "Nový like na můj příspěvek"
+          "cs": "Nový like na můj příspěvek",
+          "nl": "Nieuwe like op mijn bericht"
         },
         "tokens": [
           {
@@ -98,7 +105,8 @@
             "type": "string",
             "title": {
               "en": "User handle",
-              "cs": "Handle uživatele"
+              "cs": "Handle uživatele",
+              "nl": "Handle van gebruiker"
             }
           },
           {
@@ -106,7 +114,8 @@
             "type": "string",
             "title": {
               "en": "User name",
-              "cs": "Jméno uživatele"
+              "cs": "Jméno uživatele",
+              "nl": "Naam van gebruiker"
             }
           },
           {
@@ -114,7 +123,8 @@
             "type": "string",
             "title": {
               "en": "User DID",
-              "cs": "DID uživatele"
+              "cs": "DID uživatele",
+              "nl": "DID van gebruiker"
             }
           },
           {
@@ -122,7 +132,8 @@
             "type": "string",
             "title": {
               "en": "Post URI",
-              "cs": "URI příspěvku"
+              "cs": "URI příspěvku",
+              "nl": "Bericht-URI"
             }
           }
         ],
@@ -138,7 +149,8 @@
       {
         "title": {
           "en": "New mention",
-          "cs": "Nová zmínka"
+          "cs": "Nová zmínka",
+          "nl": "Nieuwe vermelding"
         },
         "tokens": [
           {
@@ -146,7 +158,8 @@
             "type": "string",
             "title": {
               "en": "User handle",
-              "cs": "Handle uživatele"
+              "cs": "Handle uživatele",
+              "nl": "Handle van gebruiker"
             }
           },
           {
@@ -154,7 +167,8 @@
             "type": "string",
             "title": {
               "en": "User name",
-              "cs": "Jméno uživatele"
+              "cs": "Jméno uživatele",
+              "nl": "Naam van gebruiker"
             }
           },
           {
@@ -162,7 +176,8 @@
             "type": "string",
             "title": {
               "en": "User DID",
-              "cs": "DID uživatele"
+              "cs": "DID uživatele",
+              "nl": "DID van gebruiker"
             }
           },
           {
@@ -170,7 +185,8 @@
             "type": "string",
             "title": {
               "en": "Mention text",
-              "cs": "Text zmínky"
+              "cs": "Text zmínky",
+              "nl": "Tekst van vermelding"
             }
           },
           {
@@ -178,7 +194,8 @@
             "type": "string",
             "title": {
               "en": "Post URI",
-              "cs": "URI příspěvku"
+              "cs": "URI příspěvku",
+              "nl": "Bericht-URI"
             }
           }
         ],
@@ -194,7 +211,8 @@
       {
         "title": {
           "en": "New notification",
-          "cs": "Nové oznámení"
+          "cs": "Nové oznámení",
+          "nl": "Nieuwe melding"
         },
         "tokens": [
           {
@@ -202,7 +220,8 @@
             "type": "string",
             "title": {
               "en": "User handle",
-              "cs": "Handle uživatele"
+              "cs": "Handle uživatele",
+              "nl": "Handle van gebruiker"
             }
           },
           {
@@ -210,7 +229,8 @@
             "type": "string",
             "title": {
               "en": "User name",
-              "cs": "Jméno uživatele"
+              "cs": "Jméno uživatele",
+              "nl": "Naam van gebruiker"
             }
           },
           {
@@ -218,7 +238,8 @@
             "type": "string",
             "title": {
               "en": "User DID",
-              "cs": "DID uživatele"
+              "cs": "DID uživatele",
+              "nl": "DID van gebruiker"
             }
           },
           {
@@ -226,7 +247,8 @@
             "type": "string",
             "title": {
               "en": "Notification reason",
-              "cs": "Důvod oznámení"
+              "cs": "Důvod oznámení",
+              "nl": "Reden van melding"
             }
           },
           {
@@ -234,7 +256,8 @@
             "type": "string",
             "title": {
               "en": "Notification text",
-              "cs": "Text oznámení"
+              "cs": "Text oznámení",
+              "nl": "Tekst van melding"
             }
           },
           {
@@ -242,7 +265,8 @@
             "type": "string",
             "title": {
               "en": "Post URI",
-              "cs": "URI příspěvku"
+              "cs": "URI příspěvku",
+              "nl": "Bericht-URI"
             }
           }
         ],
@@ -258,7 +282,8 @@
       {
         "title": {
           "en": "New quote of my post",
-          "cs": "Nová citace mého příspěvku"
+          "cs": "Nová citace mého příspěvku",
+          "nl": "Nieuw citaat van mijn bericht"
         },
         "tokens": [
           {
@@ -266,7 +291,8 @@
             "type": "string",
             "title": {
               "en": "User handle",
-              "cs": "Handle uživatele"
+              "cs": "Handle uživatele",
+              "nl": "Handle van gebruiker"
             }
           },
           {
@@ -274,7 +300,8 @@
             "type": "string",
             "title": {
               "en": "User name",
-              "cs": "Jméno uživatele"
+              "cs": "Jméno uživatele",
+              "nl": "Naam van gebruiker"
             }
           },
           {
@@ -282,7 +309,8 @@
             "type": "string",
             "title": {
               "en": "User DID",
-              "cs": "DID uživatele"
+              "cs": "DID uživatele",
+              "nl": "DID van gebruiker"
             }
           },
           {
@@ -290,7 +318,8 @@
             "type": "string",
             "title": {
               "en": "Quote text",
-              "cs": "Text citace"
+              "cs": "Text citace",
+              "nl": "Tekst van citaat"
             }
           },
           {
@@ -298,7 +327,8 @@
             "type": "string",
             "title": {
               "en": "Post URI",
-              "cs": "URI příspěvku"
+              "cs": "URI příspěvku",
+              "nl": "Bericht-URI"
             }
           }
         ],
@@ -314,7 +344,8 @@
       {
         "title": {
           "en": "New reply to my post",
-          "cs": "Nová odpověď na můj příspěvek"
+          "cs": "Nová odpověď na můj příspěvek",
+          "nl": "Nieuwe reactie op mijn bericht"
         },
         "tokens": [
           {
@@ -322,7 +353,8 @@
             "type": "string",
             "title": {
               "en": "User handle",
-              "cs": "Handle uživatele"
+              "cs": "Handle uživatele",
+              "nl": "Handle van gebruiker"
             }
           },
           {
@@ -330,7 +362,8 @@
             "type": "string",
             "title": {
               "en": "User name",
-              "cs": "Jméno uživatele"
+              "cs": "Jméno uživatele",
+              "nl": "Naam van gebruiker"
             }
           },
           {
@@ -338,7 +371,8 @@
             "type": "string",
             "title": {
               "en": "User DID",
-              "cs": "DID uživatele"
+              "cs": "DID uživatele",
+              "nl": "DID van gebruiker"
             }
           },
           {
@@ -346,7 +380,8 @@
             "type": "string",
             "title": {
               "en": "Reply text",
-              "cs": "Text odpovědi"
+              "cs": "Text odpovědi",
+              "nl": "Tekst van reactie"
             }
           },
           {
@@ -354,7 +389,8 @@
             "type": "string",
             "title": {
               "en": "Post URI",
-              "cs": "URI příspěvku"
+              "cs": "URI příspěvku",
+              "nl": "Bericht-URI"
             }
           }
         ],
@@ -370,7 +406,8 @@
       {
         "title": {
           "en": "New repost of my post",
-          "cs": "Nový repost mého příspěvku"
+          "cs": "Nový repost mého příspěvku",
+          "nl": "Nieuwe repost van mijn bericht"
         },
         "tokens": [
           {
@@ -378,7 +415,8 @@
             "type": "string",
             "title": {
               "en": "User handle",
-              "cs": "Handle uživatele"
+              "cs": "Handle uživatele",
+              "nl": "Handle van gebruiker"
             }
           },
           {
@@ -386,7 +424,8 @@
             "type": "string",
             "title": {
               "en": "User name",
-              "cs": "Jméno uživatele"
+              "cs": "Jméno uživatele",
+              "nl": "Naam van gebruiker"
             }
           },
           {
@@ -394,7 +433,8 @@
             "type": "string",
             "title": {
               "en": "User DID",
-              "cs": "DID uživatele"
+              "cs": "DID uživatele",
+              "nl": "DID van gebruiker"
             }
           },
           {
@@ -402,7 +442,8 @@
             "type": "string",
             "title": {
               "en": "Post URI",
-              "cs": "URI příspěvku"
+              "cs": "URI příspěvku",
+              "nl": "Bericht-URI"
             }
           }
         ],
@@ -420,7 +461,8 @@
       {
         "title": {
           "en": "Has unread notifications",
-          "cs": "Má nepřečtená oznámení"
+          "cs": "Má nepřečtená oznámení",
+          "nl": "Heeft ongelezen meldingen"
         },
         "args": [
           {
@@ -434,11 +476,13 @@
       {
         "title": {
           "en": "Followed by user",
-          "cs": "Sleduje uživatel"
+          "cs": "Sleduje uživatel",
+          "nl": "Wordt gevolgd door gebruiker"
         },
         "titleFormatted": {
           "en": "Followed by [[actor]]",
-          "cs": "Sleduje [[actor]]"
+          "cs": "Sleduje [[actor]]",
+          "nl": "Wordt gevolgd door [[actor]]"
         },
         "args": [
           {
@@ -451,7 +495,8 @@
             "name": "actor",
             "title": {
               "en": "Handle or DID",
-              "cs": "Handle nebo DID"
+              "cs": "Handle nebo DID",
+              "nl": "Handle of DID"
             }
           }
         ],
@@ -460,11 +505,13 @@
       {
         "title": {
           "en": "User is blocked",
-          "cs": "Uživatel je blokován"
+          "cs": "Uživatel je blokován",
+          "nl": "Gebruiker is geblokkeerd"
         },
         "titleFormatted": {
           "en": "User [[actor]] is blocked",
-          "cs": "Uživatel [[actor]] je blokován"
+          "cs": "Uživatel [[actor]] je blokován",
+          "nl": "Gebruiker [[actor]] is geblokkeerd"
         },
         "args": [
           {
@@ -477,7 +524,8 @@
             "name": "actor",
             "title": {
               "en": "Handle or DID",
-              "cs": "Handle nebo DID"
+              "cs": "Handle nebo DID",
+              "nl": "Handle of DID"
             }
           }
         ],
@@ -486,11 +534,13 @@
       {
         "title": {
           "en": "User is followed",
-          "cs": "Uživatel je sledován"
+          "cs": "Uživatel je sledován",
+          "nl": "Gebruiker wordt gevolgd"
         },
         "titleFormatted": {
           "en": "User [[actor]] is followed",
-          "cs": "Uživatel [[actor]] je sledován"
+          "cs": "Uživatel [[actor]] je sledován",
+          "nl": "Gebruiker [[actor]] wordt gevolgd"
         },
         "args": [
           {
@@ -503,7 +553,8 @@
             "name": "actor",
             "title": {
               "en": "Handle or DID",
-              "cs": "Handle nebo DID"
+              "cs": "Handle nebo DID",
+              "nl": "Handle of DID"
             }
           }
         ],
@@ -512,11 +563,13 @@
       {
         "title": {
           "en": "User is muted",
-          "cs": "Uživatel je ztlumen"
+          "cs": "Uživatel je ztlumen",
+          "nl": "Gebruiker is gedempt"
         },
         "titleFormatted": {
           "en": "User [[actor]] is muted",
-          "cs": "Uživatel [[actor]] je ztlumen"
+          "cs": "Uživatel [[actor]] je ztlumen",
+          "nl": "Gebruiker [[actor]] is gedempt"
         },
         "args": [
           {
@@ -529,7 +582,8 @@
             "name": "actor",
             "title": {
               "en": "Handle or DID",
-              "cs": "Handle nebo DID"
+              "cs": "Handle nebo DID",
+              "nl": "Handle of DID"
             }
           }
         ],
@@ -540,11 +594,13 @@
       {
         "title": {
           "en": "Block user",
-          "cs": "Blokovat uživatele"
+          "cs": "Blokovat uživatele",
+          "nl": "Gebruiker blokkeren"
         },
         "titleFormatted": {
           "en": "Block [[actor]]",
-          "cs": "Blokovat [[actor]]"
+          "cs": "Blokovat [[actor]]",
+          "nl": "[[actor]] blokkeren"
         },
         "args": [
           {
@@ -557,7 +613,8 @@
             "name": "actor",
             "title": {
               "en": "Handle or DID",
-              "cs": "Handle nebo DID"
+              "cs": "Handle nebo DID",
+              "nl": "Handle of DID"
             }
           }
         ],
@@ -566,15 +623,18 @@
       {
         "title": {
           "en": "Create post",
-          "cs": "Vytvořit příspěvek"
+          "cs": "Vytvořit příspěvek",
+          "nl": "Bericht maken"
         },
         "titleFormatted": {
           "en": "Create post with [[text]]",
-          "cs": "Vytvořit příspěvek s textem [[text]]"
+          "cs": "Vytvořit příspěvek s textem [[text]]",
+          "nl": "Bericht maken met [[text]]"
         },
         "hint": {
           "en": "Posts the supplied text through the selected Bluesky account.",
-          "cs": "Odešle zadaný text přes vybraný účet Bluesky."
+          "cs": "Odešle zadaný text přes vybraný účet Bluesky.",
+          "nl": "Plaatst de opgegeven tekst via het geselecteerde Bluesky-account."
         },
         "args": [
           {
@@ -587,11 +647,13 @@
             "name": "text",
             "title": {
               "en": "Post text",
-              "cs": "Text příspěvku"
+              "cs": "Text příspěvku",
+              "nl": "Berichttekst"
             },
             "placeholder": {
               "en": "What should be posted?",
-              "cs": "Co se má zveřejnit?"
+              "cs": "Co se má zveřejnit?",
+              "nl": "Wat moet er geplaatst worden?"
             }
           }
         ],
@@ -600,11 +662,13 @@
       {
         "title": {
           "en": "Create quote post",
-          "cs": "Vytvořit citující příspěvek"
+          "cs": "Vytvořit citující příspěvek",
+          "nl": "Citaatbericht maken"
         },
         "titleFormatted": {
           "en": "Create quote post with [[text]] for [[post_uri]]",
-          "cs": "Vytvořit citující příspěvek s textem [[text]] pro [[post_uri]]"
+          "cs": "Vytvořit citující příspěvek s textem [[text]] pro [[post_uri]]",
+          "nl": "Citaatbericht maken met [[text]] voor [[post_uri]]"
         },
         "args": [
           {
@@ -617,7 +681,8 @@
             "name": "text",
             "title": {
               "en": "Post text",
-              "cs": "Text příspěvku"
+              "cs": "Text příspěvku",
+              "nl": "Berichttekst"
             }
           },
           {
@@ -625,7 +690,8 @@
             "name": "post_uri",
             "title": {
               "en": "Post URI",
-              "cs": "URI příspěvku"
+              "cs": "URI příspěvku",
+              "nl": "Bericht-URI"
             }
           }
         ],
@@ -634,11 +700,13 @@
       {
         "title": {
           "en": "Delete post",
-          "cs": "Smazat příspěvek"
+          "cs": "Smazat příspěvek",
+          "nl": "Bericht verwijderen"
         },
         "titleFormatted": {
           "en": "Delete post [[post_uri]]",
-          "cs": "Smazat příspěvek [[post_uri]]"
+          "cs": "Smazat příspěvek [[post_uri]]",
+          "nl": "Bericht [[post_uri]] verwijderen"
         },
         "args": [
           {
@@ -651,7 +719,8 @@
             "name": "post_uri",
             "title": {
               "en": "Post URI",
-              "cs": "URI příspěvku"
+              "cs": "URI příspěvku",
+              "nl": "Bericht-URI"
             }
           }
         ],
@@ -660,11 +729,13 @@
       {
         "title": {
           "en": "Follow user",
-          "cs": "Sledovat uživatele"
+          "cs": "Sledovat uživatele",
+          "nl": "Gebruiker volgen"
         },
         "titleFormatted": {
           "en": "Follow [[actor]]",
-          "cs": "Sledovat [[actor]]"
+          "cs": "Sledovat [[actor]]",
+          "nl": "[[actor]] volgen"
         },
         "args": [
           {
@@ -677,7 +748,8 @@
             "name": "actor",
             "title": {
               "en": "Handle or DID",
-              "cs": "Handle nebo DID"
+              "cs": "Handle nebo DID",
+              "nl": "Handle of DID"
             }
           }
         ],
@@ -686,11 +758,13 @@
       {
         "title": {
           "en": "Like post",
-          "cs": "Označit příspěvek jako To se mi líbí"
+          "cs": "Označit příspěvek jako To se mi líbí",
+          "nl": "Bericht liken"
         },
         "titleFormatted": {
           "en": "Like post [[post_uri]]",
-          "cs": "Označit příspěvek [[post_uri]] jako To se mi líbí"
+          "cs": "Označit příspěvek [[post_uri]] jako To se mi líbí",
+          "nl": "Bericht [[post_uri]] liken"
         },
         "args": [
           {
@@ -703,7 +777,8 @@
             "name": "post_uri",
             "title": {
               "en": "Post URI",
-              "cs": "URI příspěvku"
+              "cs": "URI příspěvku",
+              "nl": "Bericht-URI"
             }
           }
         ],
@@ -712,11 +787,13 @@
       {
         "title": {
           "en": "Mute user",
-          "cs": "Ztlumit uživatele"
+          "cs": "Ztlumit uživatele",
+          "nl": "Gebruiker dempen"
         },
         "titleFormatted": {
           "en": "Mute [[actor]]",
-          "cs": "Ztlumit [[actor]]"
+          "cs": "Ztlumit [[actor]]",
+          "nl": "[[actor]] dempen"
         },
         "args": [
           {
@@ -729,7 +806,8 @@
             "name": "actor",
             "title": {
               "en": "Handle or DID",
-              "cs": "Handle nebo DID"
+              "cs": "Handle nebo DID",
+              "nl": "Handle of DID"
             }
           }
         ],
@@ -738,11 +816,13 @@
       {
         "title": {
           "en": "Repost post",
-          "cs": "Přeposlat příspěvek"
+          "cs": "Přeposlat příspěvek",
+          "nl": "Bericht reposten"
         },
         "titleFormatted": {
           "en": "Repost post [[post_uri]]",
-          "cs": "Přeposlat příspěvek [[post_uri]]"
+          "cs": "Přeposlat příspěvek [[post_uri]]",
+          "nl": "Bericht [[post_uri]] reposten"
         },
         "args": [
           {
@@ -755,7 +835,8 @@
             "name": "post_uri",
             "title": {
               "en": "Post URI",
-              "cs": "URI příspěvku"
+              "cs": "URI příspěvku",
+              "nl": "Bericht-URI"
             }
           }
         ],
@@ -764,11 +845,13 @@
       {
         "title": {
           "en": "Unblock user",
-          "cs": "Odblokovat uživatele"
+          "cs": "Odblokovat uživatele",
+          "nl": "Gebruiker deblokkeren"
         },
         "titleFormatted": {
           "en": "Unblock [[actor]]",
-          "cs": "Odblokovat [[actor]]"
+          "cs": "Odblokovat [[actor]]",
+          "nl": "[[actor]] deblokkeren"
         },
         "args": [
           {
@@ -781,7 +864,8 @@
             "name": "actor",
             "title": {
               "en": "Handle or DID",
-              "cs": "Handle nebo DID"
+              "cs": "Handle nebo DID",
+              "nl": "Handle of DID"
             }
           }
         ],
@@ -790,11 +874,13 @@
       {
         "title": {
           "en": "Undo repost",
-          "cs": "Zrušit přeposlání"
+          "cs": "Zrušit přeposlání",
+          "nl": "Repost ongedaan maken"
         },
         "titleFormatted": {
           "en": "Undo repost [[post_uri]]",
-          "cs": "Zrušit přeposlání [[post_uri]]"
+          "cs": "Zrušit přeposlání [[post_uri]]",
+          "nl": "Repost van [[post_uri]] ongedaan maken"
         },
         "args": [
           {
@@ -807,7 +893,8 @@
             "name": "post_uri",
             "title": {
               "en": "Post URI",
-              "cs": "URI příspěvku"
+              "cs": "URI příspěvku",
+              "nl": "Bericht-URI"
             }
           }
         ],
@@ -816,11 +903,13 @@
       {
         "title": {
           "en": "Unfollow user",
-          "cs": "Přestat sledovat uživatele"
+          "cs": "Přestat sledovat uživatele",
+          "nl": "Gebruiker ontvolgen"
         },
         "titleFormatted": {
           "en": "Unfollow [[actor]]",
-          "cs": "Přestat sledovat [[actor]]"
+          "cs": "Přestat sledovat [[actor]]",
+          "nl": "[[actor]] ontvolgen"
         },
         "args": [
           {
@@ -833,7 +922,8 @@
             "name": "actor",
             "title": {
               "en": "Handle or DID",
-              "cs": "Handle nebo DID"
+              "cs": "Handle nebo DID",
+              "nl": "Handle of DID"
             }
           }
         ],
@@ -842,11 +932,13 @@
       {
         "title": {
           "en": "Remove like",
-          "cs": "Odebrat To se mi líbí"
+          "cs": "Odebrat To se mi líbí",
+          "nl": "Like verwijderen"
         },
         "titleFormatted": {
           "en": "Remove like [[post_uri]]",
-          "cs": "Odebrat To se mi líbí [[post_uri]]"
+          "cs": "Odebrat To se mi líbí [[post_uri]]",
+          "nl": "Like van [[post_uri]] verwijderen"
         },
         "args": [
           {
@@ -859,7 +951,8 @@
             "name": "post_uri",
             "title": {
               "en": "Post URI",
-              "cs": "URI příspěvku"
+              "cs": "URI příspěvku",
+              "nl": "Bericht-URI"
             }
           }
         ],
@@ -868,11 +961,13 @@
       {
         "title": {
           "en": "Unmute user",
-          "cs": "Zrušit ztlumení uživatele"
+          "cs": "Zrušit ztlumení uživatele",
+          "nl": "Dempen van gebruiker opheffen"
         },
         "titleFormatted": {
           "en": "Unmute [[actor]]",
-          "cs": "Zrušit ztlumení [[actor]]"
+          "cs": "Zrušit ztlumení [[actor]]",
+          "nl": "Dempen van [[actor]] opheffen"
         },
         "args": [
           {
@@ -885,7 +980,8 @@
             "name": "actor",
             "title": {
               "en": "Handle or DID",
-              "cs": "Handle nebo DID"
+              "cs": "Handle nebo DID",
+              "nl": "Handle of DID"
             }
           }
         ],
@@ -991,7 +1087,8 @@
       "type": "number",
       "title": {
         "en": "Followers",
-        "cs": "Sledující"
+        "cs": "Sledující",
+        "nl": "Volgers"
       },
       "icon": "/capabilities/measure_followers.svg",
       "getable": true,
@@ -1003,7 +1100,8 @@
       "type": "number",
       "title": {
         "en": "Following",
-        "cs": "Sledované účty"
+        "cs": "Sledované účty",
+        "nl": "Volgend"
       },
       "icon": "/capabilities/measure_following.svg",
       "getable": true,
@@ -1015,7 +1113,8 @@
       "type": "number",
       "title": {
         "en": "Posts",
-        "cs": "Příspěvky"
+        "cs": "Příspěvky",
+        "nl": "Berichten"
       },
       "icon": "/capabilities/measure_posts.svg",
       "getable": true,
@@ -1027,7 +1126,8 @@
       "type": "number",
       "title": {
         "en": "Unread notifications",
-        "cs": "Nepřečtená oznámení"
+        "cs": "Nepřečtená oznámení",
+        "nl": "Ongelezen meldingen"
       },
       "icon": "/capabilities/measure_unread_notifications.svg",
       "getable": true,

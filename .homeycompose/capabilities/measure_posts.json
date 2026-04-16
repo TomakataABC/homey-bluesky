@@ -2,7 +2,8 @@
   "type": "number",
   "title": {
     "en": "Posts",
-    "cs": "Příspěvky"
+    "cs": "Příspěvky",
+    "nl": "Berichten"
   },
   "icon": "/capabilities/measure_posts.svg",
   "getable": true,

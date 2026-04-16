@@ -1,8 +1,8 @@
 {
-  "title": { "en": "Unmute user", "cs": "Zrušit ztlumení uživatele" },
-  "titleFormatted": { "en": "Unmute [[actor]]", "cs": "Zrušit ztlumení [[actor]]" },
+  "title": { "en": "Unmute user", "cs": "Zrušit ztlumení uživatele", "nl": "Dempen van gebruiker opheffen" },
+  "titleFormatted": { "en": "Unmute [[actor]]", "cs": "Zrušit ztlumení [[actor]]", "nl": "Dempen van [[actor]] opheffen" },
   "args": [
     { "type": "device", "name": "device", "filter": "driver_id=bluesky-account" },
-    { "type": "text", "name": "actor", "title": { "en": "Handle or DID", "cs": "Handle nebo DID" } }
+    { "type": "text", "name": "actor", "title": { "en": "Handle or DID", "cs": "Handle nebo DID", "nl": "Handle of DID" } }
   ]
 }

@@ -3,7 +3,8 @@
   "type": "label",
   "label": {
     "en": "DID",
-    "cs": "DID"
+    "cs": "DID",
+    "nl": "DID"
   },
   "value": ""
 }

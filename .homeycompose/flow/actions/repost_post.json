@@ -1,8 +1,8 @@
 {
-  "title": { "en": "Repost post", "cs": "Přeposlat příspěvek" },
-  "titleFormatted": { "en": "Repost post [[post_uri]]", "cs": "Přeposlat příspěvek [[post_uri]]" },
+  "title": { "en": "Repost post", "cs": "Přeposlat příspěvek", "nl": "Bericht reposten" },
+  "titleFormatted": { "en": "Repost post [[post_uri]]", "cs": "Přeposlat příspěvek [[post_uri]]", "nl": "Bericht [[post_uri]] reposten" },
   "args": [
     { "type": "device", "name": "device", "filter": "driver_id=bluesky-account" },
-    { "type": "text", "name": "post_uri", "title": { "en": "Post URI", "cs": "URI příspěvku" } }
+    { "type": "text", "name": "post_uri", "title": { "en": "Post URI", "cs": "URI příspěvku", "nl": "Bericht-URI" } }
   ]
 }

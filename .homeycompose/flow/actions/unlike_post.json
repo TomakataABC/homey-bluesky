@@ -1,8 +1,8 @@
 {
-  "title": { "en": "Remove like", "cs": "Odebrat To se mi líbí" },
-  "titleFormatted": { "en": "Remove like [[post_uri]]", "cs": "Odebrat To se mi líbí [[post_uri]]" },
+  "title": { "en": "Remove like", "cs": "Odebrat To se mi líbí", "nl": "Like verwijderen" },
+  "titleFormatted": { "en": "Remove like [[post_uri]]", "cs": "Odebrat To se mi líbí [[post_uri]]", "nl": "Like van [[post_uri]] verwijderen" },
   "args": [
     { "type": "device", "name": "device", "filter": "driver_id=bluesky-account" },
-    { "type": "text", "name": "post_uri", "title": { "en": "Post URI", "cs": "URI příspěvku" } }
+    { "type": "text", "name": "post_uri", "title": { "en": "Post URI", "cs": "URI příspěvku", "nl": "Bericht-URI" } }
   ]
 }
