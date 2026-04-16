@@ -1,0 +1,22 @@
+{
+  "app": {
+    "name": "Bluesky",
+    "description": "Blijf op de hoogte van de online ontwikkelingen - altijd, overal."
+  },
+  "flow": {
+    "create_post_success": "Bericht succesvol aangemaakt."
+  },
+  "errors": {
+    "missing_handle": "Eerst je Bluesky handle toevoegen.",
+    "missing_app_password": "Geef je Bluesky app wachtwoord",
+    "login_failed": "Bluesky login mislukt.",
+    "session_missing": "Er is geen opgeslagen Bluesky sessie gevonden voor dit account.",
+    "post_text_required": "Bericht tekst mag niet leeg zijn.",
+    "post_not_found": "Het gerefereerde Bluesky bericht kan niet gevonden worden."
+  },
+  "settings": {
+    "account_handle": "Account handle",
+    "account_did": "Account DID",
+    "service_endpoint": "PDS endpoint"
+  }
+}

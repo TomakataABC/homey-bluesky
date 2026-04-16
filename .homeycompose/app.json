@@ -31,5 +31,17 @@
   "bugs": {
     "url": "https://github.com/TomakataABC/homey-bluesky/issues"
   },
-  "source": "https://github.com/TomakataABC/homey-bluesky"
+  "source": "https://github.com/TomakataABC/homey-bluesky",
+  "contributors": {
+    "developers": [
+      {
+        "name": "Tomáš Pryl"
+      }
+    ],
+    "translators": [
+      {
+        "name": "Twan Veugelers"
+      }
+    ]
+  }
 }

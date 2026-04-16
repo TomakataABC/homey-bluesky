@@ -1,7 +1,7 @@
 {
   "app": {
     "name": "Bluesky",
-    "description": "Sledujte, co se děje na internetu - kdykoli a kdekoli"
+    "description": "Sledujte, co se děje na internetu - kdykoli a kdekoli."
   },
   "flow": {
     "create_post_success": "Příspěvek byl úspěšně vytvořen."

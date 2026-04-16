@@ -1,7 +1,7 @@
 {
   "app": {
     "name": "Bluesky",
-    "description": "Stay up to date on what's happening online - anytime, anywhere.."
+    "description": "Stay up to date on what's happening online - anytime, anywhere."
   },
   "flow": {
     "create_post_success": "Post created successfully."

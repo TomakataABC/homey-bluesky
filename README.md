@@ -2,13 +2,21 @@
 
 Homey app for connecting a Bluesky account and using it in Flows.
 
+You can download the app for your Homey [here](https://homey.app/a/app.bsky/).
+
 ## What is in the repo
 
 - Homey app manifest and compose files
 - Bluesky account driver
 - Flow cards for posting and account interactions
 - Polling-based account state updates
-- Localized app texts
+
+<br>
+
+The app is currently available in the following languages:
+- 🇬🇧 English
+- 🇨🇿 Czech
+- 🇳🇱 Dutch
 
 ## Development
 
@@ -37,5 +45,4 @@ The app uses a Bluesky handle together with the account password or an app passw
 ## Notes
 
 - Widgets are currently disabled.
-- Some account data is exposed as device values and settings.
 - Notification-based triggers are detected by polling.
